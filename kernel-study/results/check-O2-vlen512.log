@@ -1,8 +1,0 @@
-VLEN=512 seed=0x19b4a73d
-original: blocks=0 expected=0 actual=0
-original: blocks=1 expected=32 actual=0
-original: blocks=2 expected=64 actual=64
-original: blocks=3 expected=96 actual=64
-original: blocks=4 expected=128 actual=128
-original: blocks=5 expected=160 actual=128
-PASS: 7908 cases; baseline/candidate bit-identical; generic and double references agree within tolerance; 38 guarded cases

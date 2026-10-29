@@ -1,3 +1,0 @@
-patching file ggml/src/ggml-cpu/arch/riscv/quants.c
-patching file ggml/src/ggml-cpu/arch/riscv/quants.c
-PASS: patches apply without fuzz and reconstruct candidate source

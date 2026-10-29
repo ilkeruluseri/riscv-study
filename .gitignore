@@ -1,0 +1,45 @@
+# Compiled exercise programs (keep C and assembly learning materials).
+/exercise[0-9]
+/exercise[0-9][0-9]
+/hello
+/test
+
+# Compiler and build-system output.
+*.o
+*.a
+*.so
+*.so.*
+*.out
+/build/
+/cmake-build-*/
+
+# Generated experiment output. Keep sources, patches and frozen inputs.
+/kernel-study/results/
+/llama-bug-repro/repro
+/llama-bug-repro/repro.s
+/llama-bug-repro/kernels.inc
+
+# Python caches and local environments.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Raw profiler output outside the experiment results directory.
+perf.data
+perf.data.*
+*.perf.data
+*.perf.data.*
+
+# Local credentials, tool state and editor/OS scratch files.
+/.aws/
+/.agents/
+/.codex/
+.env
+.env.*
+!.env.example
+*.swp
+*.swo
+*~
+.DS_Store
