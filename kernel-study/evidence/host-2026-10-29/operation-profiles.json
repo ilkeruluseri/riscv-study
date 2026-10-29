@@ -1,0 +1,216 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "kind": "host-practice",
+  "source_revision": "31385c9cebf9e5271a38e14c26e5df6dd93718b1",
+  "binary_sha256": "de5356283a9f27bfed60f46dd3f86b724b0db11fe158bf9df7f96ebcdc49beec",
+  "event": "cpu-clock:u",
+  "sampling_frequency_hz": 99,
+  "call_graphs": false,
+  "scope": "whole subprocess; all inherited threads; setup included",
+  "thread_policy": "unchanged upstream tester: max(1, hardware_concurrency()/2) for tested backend",
+  "results": [
+    {
+      "case_id": "rms-f32-k896-n1",
+      "repetition": 1,
+      "samples": 1180,
+      "samples_by_dso": {
+        "test-backend-ops": 62,
+        "libgomp.so.1.0.0": 1117,
+        "libc.so.6": 1
+      },
+      "period_by_dso": {
+        "test-backend-ops": 626262620,
+        "libgomp.so.1.0.0": 11282828170,
+        "libc.so.6": 10101010
+      },
+      "raw_capture": "rms-f32-k896-n1/record/run.json",
+      "report": "rms-f32-k896-n1/record/rep-001.report.txt"
+    },
+    {
+      "case_id": "rms-f32-k896-n1",
+      "repetition": 2,
+      "samples": 1182,
+      "samples_by_dso": {
+        "libgomp.so.1.0.0": 1107,
+        "test-backend-ops": 72,
+        "libc.so.6": 3
+      },
+      "period_by_dso": {
+        "libgomp.so.1.0.0": 11181818070,
+        "test-backend-ops": 727272720,
+        "libc.so.6": 30303030
+      },
+      "raw_capture": "rms-f32-k896-n1/record/run.json",
+      "report": "rms-f32-k896-n1/record/rep-002.report.txt"
+    },
+    {
+      "case_id": "rms-f32-k896-n1",
+      "repetition": 3,
+      "samples": 1182,
+      "samples_by_dso": {
+        "libc.so.6": 2,
+        "libgomp.so.1.0.0": 1103,
+        "test-backend-ops": 77
+      },
+      "period_by_dso": {
+        "libc.so.6": 20202020,
+        "libgomp.so.1.0.0": 11141414030,
+        "test-backend-ops": 777777770
+      },
+      "raw_capture": "rms-f32-k896-n1/record/run.json",
+      "report": "rms-f32-k896-n1/record/rep-003.report.txt"
+    },
+    {
+      "case_id": "mat-q8_0-m64-k896-n1",
+      "repetition": 1,
+      "samples": 1192,
+      "samples_by_dso": {
+        "libgomp.so.1.0.0": 990,
+        "test-backend-ops": 201,
+        "libc.so.6": 1
+      },
+      "period_by_dso": {
+        "libgomp.so.1.0.0": 9999999900,
+        "test-backend-ops": 2030303010,
+        "libc.so.6": 10101010
+      },
+      "raw_capture": "mat-q8_0-m64-k896-n1/record/run.json",
+      "report": "mat-q8_0-m64-k896-n1/record/rep-001.report.txt"
+    },
+    {
+      "case_id": "mat-q8_0-m64-k896-n1",
+      "repetition": 2,
+      "samples": 1196,
+      "samples_by_dso": {
+        "test-backend-ops": 220,
+        "libgomp.so.1.0.0": 976
+      },
+      "period_by_dso": {
+        "test-backend-ops": 2222222200,
+        "libgomp.so.1.0.0": 9858585760
+      },
+      "raw_capture": "mat-q8_0-m64-k896-n1/record/run.json",
+      "report": "mat-q8_0-m64-k896-n1/record/rep-002.report.txt"
+    },
+    {
+      "case_id": "mat-q8_0-m64-k896-n1",
+      "repetition": 3,
+      "samples": 1193,
+      "samples_by_dso": {
+        "test-backend-ops": 177,
+        "libgomp.so.1.0.0": 1011,
+        "libc.so.6": 5
+      },
+      "period_by_dso": {
+        "test-backend-ops": 1787878770,
+        "libgomp.so.1.0.0": 10212121110,
+        "libc.so.6": 50505050
+      },
+      "raw_capture": "mat-q8_0-m64-k896-n1/record/run.json",
+      "report": "mat-q8_0-m64-k896-n1/record/rep-003.report.txt"
+    },
+    {
+      "case_id": "mat-q4_0-m64-k896-n1",
+      "repetition": 1,
+      "samples": 1193,
+      "samples_by_dso": {
+        "libgomp.so.1.0.0": 996,
+        "test-backend-ops": 196,
+        "libc.so.6": 1
+      },
+      "period_by_dso": {
+        "libgomp.so.1.0.0": 10060605960,
+        "test-backend-ops": 1979797960,
+        "libc.so.6": 10101010
+      },
+      "raw_capture": "mat-q4_0-m64-k896-n1/record/run.json",
+      "report": "mat-q4_0-m64-k896-n1/record/rep-001.report.txt"
+    },
+    {
+      "case_id": "mat-q4_0-m64-k896-n1",
+      "repetition": 2,
+      "samples": 1195,
+      "samples_by_dso": {
+        "libgomp.so.1.0.0": 971,
+        "test-backend-ops": 222,
+        "libc.so.6": 2
+      },
+      "period_by_dso": {
+        "libgomp.so.1.0.0": 9808080710,
+        "test-backend-ops": 2242424220,
+        "libc.so.6": 20202020
+      },
+      "raw_capture": "mat-q4_0-m64-k896-n1/record/run.json",
+      "report": "mat-q4_0-m64-k896-n1/record/rep-002.report.txt"
+    },
+    {
+      "case_id": "mat-q4_0-m64-k896-n1",
+      "repetition": 3,
+      "samples": 1194,
+      "samples_by_dso": {
+        "libgomp.so.1.0.0": 980,
+        "test-backend-ops": 212,
+        "libc.so.6": 2
+      },
+      "period_by_dso": {
+        "libgomp.so.1.0.0": 9898989800,
+        "test-backend-ops": 2141414120,
+        "libc.so.6": 20202020
+      },
+      "raw_capture": "mat-q4_0-m64-k896-n1/record/run.json",
+      "report": "mat-q4_0-m64-k896-n1/record/rep-003.report.txt"
+    },
+    {
+      "case_id": "mat-iq4_nl-m64-k896-n1",
+      "repetition": 1,
+      "samples": 1178,
+      "samples_by_dso": {
+        "test-backend-ops": 245,
+        "libgomp.so.1.0.0": 931,
+        "libc.so.6": 2
+      },
+      "period_by_dso": {
+        "test-backend-ops": 2474747450,
+        "libgomp.so.1.0.0": 9404040310,
+        "libc.so.6": 20202020
+      },
+      "raw_capture": "mat-iq4_nl-m64-k896-n1/record/run.json",
+      "report": "mat-iq4_nl-m64-k896-n1/record/rep-001.report.txt"
+    },
+    {
+      "case_id": "mat-iq4_nl-m64-k896-n1",
+      "repetition": 2,
+      "samples": 1187,
+      "samples_by_dso": {
+        "libgomp.so.1.0.0": 987,
+        "test-backend-ops": 198,
+        "libc.so.6": 2
+      },
+      "period_by_dso": {
+        "libgomp.so.1.0.0": 9969696870,
+        "test-backend-ops": 1999999980,
+        "libc.so.6": 20202020
+      },
+      "raw_capture": "mat-iq4_nl-m64-k896-n1/record/run.json",
+      "report": "mat-iq4_nl-m64-k896-n1/record/rep-002.report.txt"
+    },
+    {
+      "case_id": "mat-iq4_nl-m64-k896-n1",
+      "repetition": 3,
+      "samples": 1183,
+      "samples_by_dso": {
+        "libgomp.so.1.0.0": 946,
+        "test-backend-ops": 233,
+        "libc.so.6": 4
+      },
+      "period_by_dso": {
+        "libgomp.so.1.0.0": 9555555460,
+        "test-backend-ops": 2353535330,
+        "libc.so.6": 40404040
+      },
+      "raw_capture": "mat-iq4_nl-m64-k896-n1/record/run.json",
+      "report": "mat-iq4_nl-m64-k896-n1/record/rep-003.report.txt"
+    }
+  ]
+}

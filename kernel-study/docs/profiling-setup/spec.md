@@ -16,7 +16,7 @@ claiming that native counters or timings have been validated on this x86 host.
   the absence of a VM, emulator wrapper or remote execution.
 - Repetitions are explicit and sequential; a failed command stops the run,
   retains diagnostics, and returns failure. No shell evaluation of command text.
-- Optional perf stat/record runs require native mode and an available perf;
+- Optional perf stat/record runs require native or explicit host-practice mode and an available perf;
   errors are preserved, never silently replaced with other events.
 - The IQ4 script retains correctness-before-timing, paired samples and its
   existing summary; its binaries/build evidence and CSV become captured artifacts.

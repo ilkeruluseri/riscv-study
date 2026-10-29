@@ -3,6 +3,9 @@
 Run commands below from the workspace root unless stated otherwise. This setup
 uses Python's standard library. It does not require an installation step.
 
+See [host perf installation status](host-perf.md) for the actual WSL access
+probe, agent installation restrictions, and commands to unblock host profiling.
+
 ## What works now
 
 - Tool/platform inventory: `measure.py doctor`.
@@ -11,8 +14,12 @@ uses Python's standard library. It does not require an installation step.
   and hashes, independent stdout/stderr, exit status and process elapsed time.
 - Explicit smoke/host-practice/native classifications; native mode requires a
   riscv64 host. Missing events or profiler failures remain failures.
-- Optional native `perf stat` and `perf record` wrappers, prepared but not tested
-  against real perf/PMU hardware on the current x86_64 WSL2 machine.
+- `perf stat` and `perf record` wrappers tested with actual software events on
+  x86_64 WSL2; native RISC-V profiling remains unverified. See the
+  [baseline profile findings](baseline-profile.md).
+- Explicit host-practice perf collection is supported for native x86 workloads;
+  smoke-mode profiles and direct QEMU profiles are rejected. Set PERF to a
+  specific perf binary when the system wrapper cannot find WSL kernel tools.
 - Existing IQ4 correctness, assembly and benchmark plumbing under QEMU.
 
 The architecture guard is a useful mistake detector, not proof of native

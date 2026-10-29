@@ -1,0 +1,22 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 2K of event 'cpu-clock:u'
+# Event count (approx.): 23717171480
+#
+# Overhead;Shared Object;Symbol;IPC   [IPC Coverage]
+78.96%;llama-bench;[.] void (anonymous namespace)::tinyBLAS_Q0_AVX<block_q8_0, block_q8_0, float>::gemm4xN<2>(long, long, long, long);-      -
+13.42%;llama-bench;[.] void (anonymous namespace)::tinyBLAS<8, float __vector(8), float __vector(8), unsigned short, unsigned short, float>::gemm_bloc<4, 3>(long, long);-      -
+2.21%;llama-bench;[.] ggml_compute_forward_soft_max;-      -
+1.24%;llama-bench;[.] ggml_vec_dot_q8_0_q8_0;-      -
+0.64%;llama-bench;[.] ggml_vec_soft_max_f32;-      -
+0.51%;llama-bench;[.] ggml_compute_forward_rms_norm_mul_fused;-      -
+0.51%;llama-bench;[.] ggml_vec_swiglu_f32;-      -
+0.51%;llama-bench;[.] quantize_row_q8_0;-      -
+
+
+#
+# (Cannot load tips.txt file, please install perf!)
+#

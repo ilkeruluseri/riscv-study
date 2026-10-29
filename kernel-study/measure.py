@@ -20,7 +20,7 @@ TOOLS = ("gcc", "riscv64-linux-gnu-gcc", "riscv64-linux-gnu-objdump",
          "llvm-mca-20", "llvm-mca-21", "cmake", "ninja", "taskset",
          "gem5", "verilator")
 RUN_ENV = ("CC", "CXX", "OBJDUMP", "OPT", "CPU", "ITERATIONS", "SAMPLES",
-           "OMP_NUM_THREADS", "OMP_PROC_BIND", "OMP_PLACES")
+           "OMP_NUM_THREADS", "OMP_PROC_BIND", "OMP_PLACES", "PERF")
 
 
 def write_json(path, value):
@@ -56,7 +56,8 @@ def environment():
         "cpuinfo": read_optional("/proc/cpuinfo"),
         "perf_event_paranoid": read_optional("/proc/sys/kernel/perf_event_paranoid"),
         "selected_environment": {key: os.environ[key] for key in RUN_ENV if key in os.environ},
-        "tools": {name: tool_info(name) for name in TOOLS},
+        "tools": {name: tool_info(os.environ.get("PERF", name) if name == "perf" else name)
+                  for name in TOOLS},
     }
     metadata["cpu_sysfs"] = {}
     cpu_root = Path("/sys/devices/system/cpu")
@@ -85,19 +86,21 @@ def validate(kind, profile, command):
         if Path(command[0]).name.startswith("qemu-"):
             raise ValueError("native mode cannot directly invoke QEMU")
     if profile != "none":
-        if kind != "native":
-            raise ValueError("perf collection requires native mode")
-        if shutil.which("perf") is None:
+        if kind == "smoke":
+            raise ValueError("perf collection requires native mode or explicit host-practice")
+        if Path(command[0]).name.startswith("qemu-"):
+            raise ValueError("profile the native workload, not direct QEMU execution")
+        if shutil.which(os.environ.get("PERF", "perf")) is None:
             raise ValueError("perf is unavailable; install the target kernel's perf tools first")
 
 
 def invocation(command, profile, directory, index, events):
     stem = directory / f"rep-{index:03d}"
     if profile == "stat":
-        return ["perf", "stat", "-x", ",", "-o", str(stem) + ".stat.csv",
+        return [os.environ.get("PERF", "perf"), "stat", "-x", ",", "-o", str(stem) + ".stat.csv",
                 "-e", events or "task-clock,cycles,instructions", "--", *command]
     if profile == "record":
-        return ["perf", "record", "-o", str(stem) + ".perf.data", "-e",
+        return [os.environ.get("PERF", "perf"), "record", "-o", str(stem) + ".perf.data", "-e",
                 events or "cpu-clock:u", "-F", "99", "--", *command]
     return command
 

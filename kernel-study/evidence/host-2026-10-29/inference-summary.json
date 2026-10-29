@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "kind": "host-practice",
+  "cpu": 0,
+  "started_utc": "2026-10-29T17:59:06.105857+00:00",
+  "build": {
+    "source_revision": "31385c9cebf9e5271a38e14c26e5df6dd93718b1",
+    "executable": "llama-bench",
+    "sha256": "b5f2cd84efa67b949cdd806064abad94fbb9fe88d0f37e2d8e7211142508e71b",
+    "cmake_cache_sha256": "8f70f6073d612354a73f3d6a58bdfa9b540abb463920f7c9f8ac3d7a4a609f91"
+  },
+  "benchmark_repetitions": 21,
+  "profile_repetitions": 5,
+  "input_policy": "upstream synthetic token streams; real model weights; no tokenizer/sampler/quality evaluation",
+  "profile_scope": "whole process including loading and warmup; all inherited threads",
+  "benchmarks": [
+    {
+      "quant": "q4_0",
+      "phase": "pp128",
+      "median_tokens_per_second": 129.07852035271233,
+      "min_tokens_per_second": 128.34344294633422,
+      "max_tokens_per_second": 130.14163283399378,
+      "raw_capture": "q4_0/pp128/benchmark/run.json"
+    },
+    {
+      "quant": "q8_0",
+      "phase": "pp128",
+      "median_tokens_per_second": 139.20093536590522,
+      "min_tokens_per_second": 125.06930964955745,
+      "max_tokens_per_second": 140.53435480934073,
+      "raw_capture": "q8_0/pp128/benchmark/run.json"
+    },
+    {
+      "quant": "q4_0",
+      "phase": "pp512",
+      "median_tokens_per_second": 121.98009623133677,
+      "min_tokens_per_second": 112.34187079439663,
+      "max_tokens_per_second": 122.69990658388798,
+      "raw_capture": "q4_0/pp512/benchmark/run.json"
+    },
+    {
+      "quant": "q8_0",
+      "phase": "pp512",
+      "median_tokens_per_second": 130.31618593796034,
+      "min_tokens_per_second": 127.93407982247564,
+      "max_tokens_per_second": 131.5094997944581,
+      "raw_capture": "q8_0/pp512/benchmark/run.json"
+    },
+    {
+      "quant": "q4_0",
+      "phase": "tg128",
+      "median_tokens_per_second": 33.4859710135949,
+      "min_tokens_per_second": 29.549028600674458,
+      "max_tokens_per_second": 34.48924691955768,
+      "raw_capture": "q4_0/tg128/benchmark/run.json"
+    },
+    {
+      "quant": "q8_0",
+      "phase": "tg128",
+      "median_tokens_per_second": 25.92203975988033,
+      "min_tokens_per_second": 22.316314269489425,
+      "max_tokens_per_second": 26.46077605177783,
+      "raw_capture": "q8_0/tg128/benchmark/run.json"
+    }
+  ],
+  "profiles": [
+    {
+      "quant": "q4_0",
+      "phase": "pp512",
+      "samples": 2523,
+      "samples_by_dso": {
+        "llama-bench": 2516,
+        "libc.so.6": 2,
+        "libstdc++.so.6.0.33": 2,
+        "libm.so.6": 3
+      },
+      "period_by_dso": {
+        "llama-bench": 25414141160,
+        "libc.so.6": 20202020,
+        "libstdc++.so.6.0.33": 20202020,
+        "libm.so.6": 30303030
+      },
+      "raw_capture": "q4_0/pp512/profile/run.json",
+      "report": "q4_0/pp512/profile/report.txt"
+    },
+    {
+      "quant": "q8_0",
+      "phase": "pp512",
+      "samples": 2348,
+      "samples_by_dso": {
+        "libc.so.6": 3,
+        "libstdc++.so.6.0.33": 2,
+        "llama-bench": 2343
+      },
+      "period_by_dso": {
+        "libc.so.6": 30303030,
+        "libstdc++.so.6.0.33": 20202020,
+        "llama-bench": 23666666430
+      },
+      "raw_capture": "q8_0/pp512/profile/run.json",
+      "report": "q8_0/pp512/profile/report.txt"
+    },
+    {
+      "quant": "q4_0",
+      "phase": "tg128",
+      "samples": 1993,
+      "samples_by_dso": {
+        "libc.so.6": 17,
+        "libstdc++.so.6.0.33": 3,
+        "llama-bench": 1973
+      },
+      "period_by_dso": {
+        "libc.so.6": 171717170,
+        "libstdc++.so.6.0.33": 30303030,
+        "llama-bench": 19929292730
+      },
+      "raw_capture": "q4_0/tg128/profile/run.json",
+      "report": "q4_0/tg128/profile/report.txt"
+    },
+    {
+      "quant": "q8_0",
+      "phase": "tg128",
+      "samples": 2473,
+      "samples_by_dso": {
+        "libc.so.6": 21,
+        "libstdc++.so.6.0.33": 2,
+        "llama-bench": 2450
+      },
+      "period_by_dso": {
+        "libc.so.6": 212121210,
+        "libstdc++.so.6.0.33": 20202020,
+        "llama-bench": 24747474500
+      },
+      "raw_capture": "q8_0/tg128/profile/run.json",
+      "report": "q8_0/tg128/profile/report.txt"
+    }
+  ],
+  "finished_utc": "2026-10-29T18:07:44.810286+00:00",
+  "original_bundle": "inference/20261029T175905Z-337re8bq",
+  "snapshot_note": "Selected evidence; executable/model paths normalized; raw captures and perf.data remain in original local bundle."
+}

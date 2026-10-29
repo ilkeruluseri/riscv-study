@@ -1,0 +1,3 @@
+# Keep runnable scripts and the checksummed evidence snapshot stable on Windows.
+*.sh text eol=lf
+/kernel-study/evidence/** text eol=lf

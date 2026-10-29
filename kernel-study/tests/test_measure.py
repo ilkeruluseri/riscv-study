@@ -110,6 +110,15 @@ class CaptureTests(unittest.TestCase):
         self.assertEqual(self.manifest()["status"], "failed")
         self.assertIn("did not count", self.manifest()["samples"][0]["error"])
 
+    def test_host_practice_profiles_and_explicit_perf_path(self):
+        with patch.dict(measure.os.environ, {"PERF": "/local/tools/perf"}), \
+                patch.object(measure.shutil, "which", return_value="/local/tools/perf"):
+            measure.validate("host-practice", "record", ["benchmark"])
+            argv = measure.invocation(["benchmark"], "record", self.root, 1, None)
+            self.assertEqual(argv[0], "/local/tools/perf")
+            with self.assertRaisesRegex(ValueError, "QEMU"):
+                measure.validate("host-practice", "record", ["qemu-riscv64"])
+
     def test_successful_record_and_empty_profile_failure(self):
         self.args.kind, self.args.profile = "native", "record"
         directory = Path(self.args.output_dir)

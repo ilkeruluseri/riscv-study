@@ -15,6 +15,7 @@
 
 # Generated experiment output. Keep sources, patches and frozen inputs.
 /kernel-study/results/
+/kernel-study/workspace/
 /llama-bug-repro/repro
 /llama-bug-repro/repro.s
 /llama-bug-repro/kernels.inc

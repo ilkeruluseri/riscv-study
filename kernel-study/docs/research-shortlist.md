@@ -20,6 +20,12 @@ cover source loops without explicit RVV branches.
 
 ## Three initial investigations
 
+Subsequent [real-model host profiles](inference-baseline/results.md) now provide
+workload evidence: Q4_0/Q8_0 row-dot functions dominate decode, a separate tiled
+matrix path dominates prompt processing, and RMSNorm has a small sampled share
+in this model. Revisit priorities using that evidence before assigning work.
+Those observations do not establish RVV dispatch or native RISC-V bottlenecks.
+
 ### A. IQ4_NL × Q8_0: configuration and scalar extraction
 
 - Evidence: `source/ggml/src/ggml-cpu/arch/riscv/quants.c:5479` and the existing

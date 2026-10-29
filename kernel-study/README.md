@@ -2,6 +2,10 @@
 
 For shared command capture, environment inventories and prepared native perf
 collection, see the [measurement setup guide](docs/profiling-setup/README.md).
+The [model-free operation baseline](docs/operation-baseline/README.md) adds a
+pinned full CPU build and shared case/result format for the team's investigations.
+The [real-model inference results](docs/inference-baseline/results.md) add verified
+Qwen2.5 Q4_0/Q8_0 measurements and single-thread host profiles by inference phase.
 
 This is a worked example of the process we discussed: select a real llama.cpp kernel, understand it, establish a baseline, propose one change, test it, inspect the machine code, and prepare the hardware experiment. Everything is contained in this directory. Your exercises and the external llama.cpp checkout are unchanged.
 

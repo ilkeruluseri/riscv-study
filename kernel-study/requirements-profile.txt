@@ -1,0 +1,2 @@
+# Matches the tested GGUF metadata-reader environment (Python 3.12+).
+numpy==2.4.6

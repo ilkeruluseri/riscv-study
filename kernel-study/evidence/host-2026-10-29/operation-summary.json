@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "kind": "host-practice",
+  "cases": {
+    "rms-f32-k31-n1": {
+      "repetitions": 3,
+      "median_us": 1.153904,
+      "min_us": 1.057548,
+      "max_us": 1.224811
+    },
+    "rms-f32-k32-n1": {
+      "repetitions": 3,
+      "median_us": 1.051375,
+      "min_us": 1.04413,
+      "max_us": 1.096358
+    },
+    "rms-f32-k33-n1": {
+      "repetitions": 3,
+      "median_us": 0.96128,
+      "min_us": 0.925375,
+      "max_us": 0.972078
+    },
+    "rms-f32-k896-n1": {
+      "repetitions": 3,
+      "median_us": 0.99162,
+      "min_us": 0.964588,
+      "max_us": 1.014841
+    },
+    "rms-f32-k896-n8": {
+      "repetitions": 3,
+      "median_us": 1.577249,
+      "min_us": 1.558649,
+      "max_us": 1.615613
+    },
+    "rms-f32-k4096-n1": {
+      "repetitions": 3,
+      "median_us": 3.291346,
+      "min_us": 3.251751,
+      "max_us": 3.309897
+    },
+    "rms-f32-k4096-n8": {
+      "repetitions": 3,
+      "median_us": 4.561695,
+      "min_us": 4.530332,
+      "max_us": 5.00769
+    },
+    "mat-q8_0-m64-k896-n1": {
+      "repetitions": 3,
+      "median_us": 2.656205,
+      "min_us": 2.587952,
+      "max_us": 2.678053
+    },
+    "mat-q8_0-m64-k896-n8": {
+      "repetitions": 3,
+      "median_us": 11.25529,
+      "min_us": 9.841534,
+      "max_us": 11.861273
+    },
+    "mat-q8_0-m64-k4096-n1": {
+      "repetitions": 3,
+      "median_us": 5.8169,
+      "min_us": 5.545044,
+      "max_us": 5.820551
+    },
+    "mat-q4_0-m64-k896-n1": {
+      "repetitions": 3,
+      "median_us": 3.002069,
+      "min_us": 2.937613,
+      "max_us": 3.07843
+    },
+    "mat-q4_0-m64-k896-n8": {
+      "repetitions": 3,
+      "median_us": 8.402189,
+      "min_us": 6.800401,
+      "max_us": 10.327911
+    },
+    "mat-q4_0-m64-k4096-n1": {
+      "repetitions": 3,
+      "median_us": 6.516781,
+      "min_us": 6.471056,
+      "max_us": 7.240708
+    },
+    "mat-iq4_nl-m64-k896-n1": {
+      "repetitions": 3,
+      "median_us": 3.108469,
+      "min_us": 2.91254,
+      "max_us": 3.12034
+    },
+    "mat-iq4_nl-m64-k896-n8": {
+      "repetitions": 3,
+      "median_us": 6.822801,
+      "min_us": 6.614496,
+      "max_us": 6.892273
+    },
+    "mat-iq4_nl-m64-k4096-n1": {
+      "repetitions": 3,
+      "median_us": 4.848323,
+      "min_us": 4.781006,
+      "max_us": 4.855905
+    }
+  },
+  "interpretation": "descriptive within-suite spread only; no native RVV or significance claim from host practice"
+}

@@ -1,0 +1,20 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 1K of event 'cpu-clock:u'
+# Event count (approx.): 20131312930
+#
+# Overhead;Shared Object;Symbol;IPC   [IPC Coverage]
+61.31%;llama-bench;[.] ggml_vec_dot_q4_0_q8_0;-      -
+31.51%;llama-bench;[.] ggml_vec_dot_q8_0_q8_0;-      -
+3.11%;llama-bench;[.] ggml_vec_dot_f16;-      -
+1.10%;llama-bench;[.] ggml_compute_forward_mul_mat;-      -
+0.65%;libc.so.6;[.] __memmove_avx_unaligned_erms;-      -
+0.55%;llama-bench;[.] ggml_compute_forward_soft_max;-      -
+
+
+#
+# (Cannot load tips.txt file, please install perf!)
+#

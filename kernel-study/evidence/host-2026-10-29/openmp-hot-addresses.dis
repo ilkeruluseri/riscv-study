@@ -1,0 +1,124 @@
+
+/lib/x86_64-linux-gnu/libgomp.so.1:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000000025870 <omp_get_num_procs@@OMP_1.0+0x4c0>:
+   25870:	05 ab fb 02 00       	add    $0x2fbab,%eax
+   25875:	0f 82 cd 00 00 00    	jb     25948 <omp_get_num_procs@@OMP_1.0+0x598>
+   2587b:	31 c0                	xor    %eax,%eax
+   2587d:	48 85 d2             	test   %rdx,%rdx
+   25880:	75 29                	jne    258ab <omp_get_num_procs@@OMP_1.0+0x4fb>
+   25882:	eb 5c                	jmp    258e0 <omp_get_num_procs@@OMP_1.0+0x530>
+   25884:	66 66 2e 0f 1f 84 00 	data16 cs nopw 0x0(%rax,%rax,1)
+   2588b:	00 00 00 00
+   2588f:	66 66 2e 0f 1f 84 00 	data16 cs nopw 0x0(%rax,%rax,1)
+   25896:	00 00 00 00
+   2589a:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+   258a0:	f3 90                	pause
+   258a2:	48 83 c0 01          	add    $0x1,%rax
+   258a6:	48 39 d0             	cmp    %rdx,%rax
+   258a9:	74 35                	je     258e0 <omp_get_num_procs@@OMP_1.0+0x530>
+   258ab:	41 8b 0c 24          	mov    (%r12),%ecx
+   258af:	39 cb                	cmp    %ecx,%ebx
+   258b1:	74 ed                	je     258a0 <omp_get_num_procs@@OMP_1.0+0x4f0>
+   258b3:	41 8b 04 24          	mov    (%r12),%eax
+   258b7:	a8 01                	test   $0x1,%al
+   258b9:	75 75                	jne    25930 <omp_get_num_procs@@OMP_1.0+0x580>
+   258bb:	89 c2                	mov    %eax,%edx
+   258bd:	83 e2 02             	and    $0x2,%edx
+   258c0:	09 d3                	or     %edx,%ebx
+   258c2:	44 39 e8             	cmp    %r13d,%eax
+   258c5:	75 99                	jne    25860 <omp_get_num_procs@@OMP_1.0+0x4b0>
+   258c7:	48 83 c4 08          	add    $0x8,%rsp
+   258cb:	5b                   	pop    %rbx
+   258cc:	41 5c                	pop    %r12
+   258ce:	41 5d                	pop    %r13
+   258d0:	41 5e                	pop    %r14
+   258d2:	41 5f                	pop    %r15
+   258d4:	5d                   	pop    %rbp
+   258d5:	c3                   	ret
+   258d6:	66 2e 0f 1f 84 00 00 	cs nopw 0x0(%rax,%rax,1)
+   258dd:	00 00 00
+   258e0:	8b 35 8a fb 02 00    	mov    0x2fb8a(%rip),%esi        # 55470 <acc_update_self_async_array_h_@@OACC_2.5+0xe848>
+   258e6:	45 31 d2             	xor    %r10d,%r10d
+   258e9:	44 89 f0             	mov    %r14d,%eax
+   258ec:	4c 89 e7             	mov    %r12,%rdi
+   258ef:	89 da                	mov    %ebx,%edx
+   258f1:	0f 05                	syscall
+   258f3:	48 83 f8 da          	cmp    $0xffffffffffffffda,%rax
+   258f7:	75 ba                	jne    258b3 <omp_get_num_procs@@OMP_1.0+0x503>
+   258f9:	8b 35 71 fb 02 00    	mov    0x2fb71(%rip),%esi        # 55470 <acc_update_self_async_array_h_@@OACC_2.5+0xe848>
+   258ff:	45 31 d2             	xor    %r10d,%r10d
+   25902:	44 89 f0             	mov    %r14d,%eax
+   25905:	81 25 65 fb 02 00 7f 	andl   $0xffffff7f,0x2fb65(%rip)        # 55474 <acc_update_self_async_array_h_@@OACC_2.5+0xe84c>
+   2590c:	ff ff ff
+   2590f:	40 80 e6 7f          	and    $0x7f,%sil
+   25913:	89 35 57 fb 02 00    	mov    %esi,0x2fb57(%rip)        # 55470 <acc_update_self_async_array_h_@@OACC_2.5+0xe848>
+   25919:	0f 05                	syscall
+   2591b:	41 8b 04 24          	mov    (%r12),%eax
+   2591f:	a8 01                	test   $0x1,%al
+   25921:	74 98                	je     258bb <omp_get_num_procs@@OMP_1.0+0x50b>
+   25923:	66 66 2e 0f 1f 84 00 	data16 cs nopw 0x0(%rax,%rax,1)
+   2592a:	00 00 00 00
+   2592e:	66 90                	xchg   %ax,%ax
+   25930:	44 89 ff             	mov    %r15d,%edi
+   25933:	e8 78 66 ff ff       	call   1bfb0 <GOMP_PLUGIN_target_task_completion@@GOMP_PLUGIN_1.1+0xa60>
+   25938:	41 8b 04 24          	mov    (%r12),%eax
+   2593c:	e9 7a ff ff ff       	jmp    258bb <omp_get_num_procs@@OMP_1.0+0x50b>
+   25941:	0f 1f 80 00 00 00 00 	nopl   0x0(%rax)
+   25948:	48 8b 15 11 fe 02 00 	mov    0x2fe11(%rip),%rdx        # 55760 <acc_update_self_async_array_h_@@OACC_2.5+0xeb38>
+   2594f:	e9 27 ff ff ff       	jmp    2587b <omp_get_num_procs@@OMP_1.0+0x4cb>
+   25954:	48 8b 05 25 f6 02 00 	mov    0x2f625(%rip),%rax        # 54f80 <acc_update_self_async_array_h_@@OACC_2.5+0xe358>
+   2595b:	8b 17                	mov    (%rdi),%edx
+   2595d:	64 48 8b 40 10       	mov    %fs:0x10(%rax),%rax
+   25962:	89 57 40             	mov    %edx,0x40(%rdi)
+   25965:	c7 80 34 05 00 00 00 	movl   $0x0,0x534(%rax)
+   2596c:	00 00 00
+   2596f:	8b 80 28 05 00 00    	mov    0x528(%rax),%eax
+   25975:	85 c0                	test   %eax,%eax
+   25977:	75 55                	jne    259ce <omp_get_num_procs@@OMP_1.0+0x61e>
+   25979:	89 d8                	mov    %ebx,%eax
+   2597b:	41 b8 ca 00 00 00    	mov    $0xca,%r8d
+   25981:	48 8d 7f 04          	lea    0x4(%rdi),%rdi
+   25985:	83 e0 fb             	and    $0xfffffffb,%eax
+   25988:	ba ff ff ff 7f       	mov    $0x7fffffff,%edx
+   2598d:	83 c0 07             	add    $0x7,%eax
+   25990:	41 89 44 24 04       	mov    %eax,0x4(%r12)
+   25995:	44 89 c0             	mov    %r8d,%eax
+   25998:	8b 35 d6 fa 02 00    	mov    0x2fad6(%rip),%esi        # 55474 <acc_update_self_async_array_h_@@OACC_2.5+0xe84c>
+   2599e:	0f 05                	syscall
+   259a0:	48 83 f8 da          	cmp    $0xffffffffffffffda,%rax
+   259a4:	0f 85 1d ff ff ff    	jne    258c7 <omp_get_num_procs@@OMP_1.0+0x517>
+   259aa:	8b 35 c4 fa 02 00    	mov    0x2fac4(%rip),%esi        # 55474 <acc_update_self_async_array_h_@@OACC_2.5+0xe84c>
+   259b0:	44 89 c0             	mov    %r8d,%eax
+   259b3:	81 25 b3 fa 02 00 7f 	andl   $0xffffff7f,0x2fab3(%rip)        # 55470 <acc_update_self_async_array_h_@@OACC_2.5+0xe848>
+   259ba:	ff ff ff
+   259bd:	40 80 e6 7f          	and    $0x7f,%sil
+   259c1:	89 35 ad fa 02 00    	mov    %esi,0x2faad(%rip)        # 55474 <acc_update_self_async_array_h_@@OACC_2.5+0xe84c>
+   259c7:	0f 05                	syscall
+   259c9:	e9 f9 fe ff ff       	jmp    258c7 <omp_get_num_procs@@OMP_1.0+0x517>
+   259ce:	89 df                	mov    %ebx,%edi
+   259d0:	83 e3 fe             	and    $0xfffffffe,%ebx
+   259d3:	e8 d8 65 ff ff       	call   1bfb0 <GOMP_PLUGIN_target_task_completion@@GOMP_PLUGIN_1.1+0xa60>
+   259d8:	e9 66 fe ff ff       	jmp    25843 <omp_get_num_procs@@OMP_1.0+0x493>
+   259dd:	0f 1f 00             	nopl   (%rax)
+   259e0:	f3 0f 1e fa          	endbr64
+   259e4:	8b 77 04             	mov    0x4(%rdi),%esi
+   259e7:	83 e6 fc             	and    $0xfffffffc,%esi
+   259ea:	f0 83 6f 40 01       	lock subl $0x1,0x40(%rdi)
+   259ef:	0f 94 c2             	sete   %dl
+   259f2:	89 f0                	mov    %esi,%eax
+   259f4:	83 c8 01             	or     $0x1,%eax
+   259f7:	84 d2                	test   %dl,%dl
+   259f9:	0f 45 f0             	cmovne %eax,%esi
+   259fc:	e9 1f fe ff ff       	jmp    25820 <omp_get_num_procs@@OMP_1.0+0x470>
+   25a01:	66 66 2e 0f 1f 84 00 	data16 cs nopw 0x0(%rax,%rax,1)
+   25a08:	00 00 00 00
+   25a0c:	0f 1f 40 00          	nopl   0x0(%rax)
+   25a10:	f3 0f 1e fa          	endbr64
+   25a14:	8b 77 04             	mov    0x4(%rdi),%esi
+   25a17:	83 e6 fc             	and    $0xfffffffc,%esi
+   25a1a:	f0 83 6f 44 01       	lock subl $0x1,0x44(%rdi)
+   25a1f:	75                   	.byte 0x75

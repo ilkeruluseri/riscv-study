@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.16)
+project(operation-baseline LANGUAGES C CXX)
+
+if(NOT LLAMA_SOURCE_DIR)
+    message(FATAL_ERROR "Set LLAMA_SOURCE_DIR to the exported baseline source")
+endif()
+add_subdirectory("${LLAMA_SOURCE_DIR}" llama)
+add_executable(export-cases export-cases.cpp)
+target_link_libraries(export-cases PRIVATE ggml)
+target_compile_features(export-cases PRIVATE cxx_std_17)
