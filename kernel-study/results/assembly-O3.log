@@ -1,0 +1,50 @@
+{
+  "candidate_vl256": {
+    "symbol": "candidate_vl256.isra.0",
+    "instructions_in_function": 484,
+    "vse32.v": 0,
+    "vmv.x.s": 2,
+    "vwredsum.vs": 2,
+    "vsetvli": 2,
+    "vsetivli": 6,
+    "scalar_lw_from_sp": 38,
+    "pair_loop_instructions": 59,
+    "pair_loop_vset": 6
+  },
+  "candidate_vl128": {
+    "symbol": "candidate_vl128.isra.0",
+    "instructions_in_function": 482,
+    "vse32.v": 0,
+    "vmv.x.s": 2,
+    "vwredsum.vs": 2,
+    "vsetvli": 6,
+    "vsetivli": 7,
+    "scalar_lw_from_sp": 38,
+    "pair_loop_instructions": 55,
+    "pair_loop_vset": 10
+  },
+  "baseline_vl256": {
+    "symbol": "baseline_vl256.isra.0",
+    "instructions_in_function": 483,
+    "vse32.v": 2,
+    "vmv.x.s": 0,
+    "vwredsum.vs": 2,
+    "vsetvli": 1,
+    "vsetivli": 4,
+    "scalar_lw_from_sp": 40,
+    "pair_loop_instructions": 58,
+    "pair_loop_vset": 3
+  },
+  "baseline_vl128": {
+    "symbol": "baseline_vl128.isra.0",
+    "instructions_in_function": 477,
+    "vse32.v": 2,
+    "vmv.x.s": 0,
+    "vwredsum.vs": 2,
+    "vsetvli": 3,
+    "vsetivli": 5,
+    "scalar_lw_from_sp": 40,
+    "pair_loop_instructions": 53,
+    "pair_loop_vset": 6
+  }
+}

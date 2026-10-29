@@ -1,0 +1,168 @@
+0000000000001070 <candidate_vl256.isra.0>:
+    1070:	addi	sp,sp,-32
+    1072:	auipc	t3,0x4
+    1076:	ld	t3,-154(t3) # 4fd8 <__stack_chk_guard@GLIBC_2.27>
+    107a:	ld	a5,0(t3)
+    107e:	sd	a5,8(sp)
+    1080:	li	a5,0
+    1082:	sd	ra,24(sp)
+    1084:	li	a5,1
+    1086:	vsetivli	zero,16,e8,mf2,ta,ma
+    108a:	bne	a4,a5,128e <candidate_vl256.isra.0+0x21e>
+    108e:	andi	t4,a0,31
+    1092:	bnez	t4,126e <candidate_vl256.isra.0+0x1fe>
+    1096:	sraiw	t0,a0,0x1f
+    109a:	srliw	t0,t0,0x1b
+    109e:	addw	t0,t0,a0
+    10a2:	sraiw	t2,t0,0x5
+    10a6:	auipc	a4,0x2
+    10aa:	addi	a4,a4,-542 # 2e88 <kvalues_iq4nl>
+    10ae:	li	a5,63
+    10b2:	fmv.w.x	fa5,zero
+    10b6:	mv	t0,t2
+    10b8:	vle8.v	v25,(a4)
+    10bc:	bge	a5,a0,1262 <candidate_vl256.isra.0+0x1f2>
+    10c0:	addi	a4,a2,2
+    10c4:	addi	a5,a3,2
+    10c8:	li	t6,0
+    10ca:	auipc	t5,0x4
+    10ce:	addi	t5,t5,-170 # 5020 <ggml_table_f32_f16>
+    10d2:	vsetivli	zero,1,e32,m1,ta,ma
+    10d6:	vmv.v.i	v26,0
+    10da:	lhu	t1,-2(a4)
+    10de:	lhu	a7,-2(a5)
+    10e2:	lhu	a6,16(a4)
+    10e6:	slli	t1,t1,0x2
+    10e8:	slli	a7,a7,0x2
+    10ea:	add	a7,a7,t5
+    10ec:	add	t1,t1,t5
+    10ee:	flw	fa4,0(a7) # 10000 <__global_pointer$+0xa7f4>
+    10f2:	lhu	a0,32(a5)
+    10f6:	flw	fa3,0(t1)
+    10fa:	vsetivli	zero,16,e8,mf2,ta,ma
+    10fe:	addi	a7,a5,16
+    1102:	vle8.v	v24,(a4)
+    1106:	fmul.s	fa3,fa3,fa4
+    110a:	vand.vi	v27,v24,15
+    110e:	slli	a6,a6,0x2
+    1110:	vsrl.vi	v24,v24,4
+    1114:	slli	a0,a0,0x2
+    1116:	vle8.v	v30,(a5)
+    111a:	vle8.v	v28,(a7)
+    111e:	vrgather.vv	v29,v25,v27
+    1122:	add	a6,a6,t5
+    1124:	vrgather.vv	v27,v25,v24
+    1128:	add	a0,a0,t5
+    112a:	vwmul.vv	v24,v30,v29
+    112e:	vwmacc.vv	v24,v28,v27
+    1132:	vsetvli	zero,zero,e16,m1,ta,ma
+    1136:	flw	fa4,0(a6) # 20000 <__global_pointer$+0x1a7f4>
+    113a:	vwredsum.vs	v27,v24,v26
+    113e:	flw	fa1,0(a0)
+    1142:	vsetivli	zero,0,e32,m1,ta,ma
+    1146:	vmv.x.s	a0,v27
+    114a:	fcvt.s.w	fa2,a0
+    114e:	addi	a7,a4,18
+    1152:	vsetivli	zero,16,e8,mf2,ta,ma
+    1156:	addi	a0,a5,50
+    115a:	vle8.v	v24,(a7)
+    115e:	fmadd.s	fa5,fa3,fa2,fa5
+    1162:	vand.vi	v27,v24,15
+    1166:	addi	a6,a5,34
+    116a:	vsrl.vi	v24,v24,4
+    116e:	fmul.s	fa4,fa4,fa1
+    1172:	vle8.v	v28,(a0)
+    1176:	vrgather.vv	v29,v25,v27
+    117a:	vle8.v	v30,(a6)
+    117e:	vrgather.vv	v27,v25,v24
+    1182:	vwmul.vv	v24,v30,v29
+    1186:	vwmacc.vv	v24,v28,v27
+    118a:	vsetvli	zero,zero,e16,m1,ta,ma
+    118e:	vwredsum.vs	v27,v24,v26
+    1192:	vsetivli	zero,0,e32,m1,ta,ma
+    1196:	vmv.x.s	a0,v27
+    119a:	fcvt.s.w	fa3,a0
+    119e:	addiw	a0,t6,3
+    11a2:	addi	a4,a4,36
+    11a6:	fmadd.s	fa5,fa4,fa3,fa5
+    11aa:	addiw	t6,t6,2
+    11ac:	addi	a5,a5,68
+    11b0:	blt	a0,t2,10da <candidate_vl256.isra.0+0x6a>
+    11b4:	addiw	t0,t0,-2
+    11b6:	andi	t0,t0,-2
+    11ba:	addiw	t0,t0,2
+    11bc:	bge	t0,t2,124c <candidate_vl256.isra.0+0x1dc>
+    11c0:	slli	a4,t0,0x4
+    11c4:	slli	a5,t0,0x3
+    11c8:	add	a4,a4,t0
+    11ca:	add	a5,a5,t0
+    11cc:	slli	a4,a4,0x1
+    11ce:	slli	a5,a5,0x1
+    11d0:	add	a3,a3,a4
+    11d2:	add	a2,a2,a5
+    11d4:	lhu	a0,0(a2)
+    11d8:	lhu	a5,0(a3)
+    11dc:	auipc	a4,0x4
+    11e0:	addi	a4,a4,-444 # 5020 <ggml_table_f32_f16>
+    11e4:	slli	a0,a0,0x2
+    11e6:	slli	a5,a5,0x2
+    11e8:	add	a5,a5,a4
+    11ea:	add	a4,a4,a0
+    11ec:	flw	fa4,0(a5)
+    11f0:	flw	fa3,0(a4)
+    11f4:	addi	a6,a3,2
+    11f8:	addi	a2,a2,2
+    11fa:	fmul.s	fa4,fa4,fa3
+    11fe:	addi	a3,a3,18
+    1200:	li	t1,0
+    1202:	auipc	a7,0x2
+    1206:	addi	a7,a7,-906 # 2e78 <__PRETTY_FUNCTION__.2>
+    120a:	lbu	a5,0(a2)
+    120e:	lb	t6,0(a6)
+    1212:	lb	t5,16(a6)
+    1216:	andi	a4,a5,15
+    121a:	srli	a5,a5,0x4
+    121c:	add	a5,a5,a7
+    121e:	add	a4,a4,a7
+    1220:	lb	a4,16(a4)
+    1224:	lb	a0,16(a5)
+    1228:	addi	a6,a6,1
+    122a:	mulw	a5,a4,t6
+    122e:	addi	a2,a2,1
+    1230:	mulw	a4,a0,t5
+    1234:	addw	t4,a5,t4
+    1238:	addw	t1,a4,t1
+    123c:	bne	a6,a3,120a <candidate_vl256.isra.0+0x19a>
+    1240:	addw	a5,t4,t1
+    1244:	fcvt.s.w	fa3,a5
+    1248:	fmadd.s	fa5,fa4,fa3,fa5
+    124c:	fsw	fa5,0(a1)
+    1250:	ld	a4,8(sp)
+    1252:	ld	a5,0(t3)
+    1256:	xor	a5,a5,a4
+    1258:	li	a4,0
+    125a:	bnez	a5,126a <candidate_vl256.isra.0+0x1fa>
+    125c:	ld	ra,24(sp)
+    125e:	addi	sp,sp,32
+    1260:	ret
+    1262:	li	t0,0
+    1264:	bge	t0,t2,124c <candidate_vl256.isra.0+0x1dc>
+    1268:	j	11c0 <candidate_vl256.isra.0+0x150>
+    126a:	jal	b10 <__stack_chk_fail@plt>
+    126e:	auipc	a3,0x2
+    1272:	addi	a3,a3,-1014 # 2e78 <__PRETTY_FUNCTION__.2>
+    1276:	li	a2,375
+    127a:	auipc	a1,0x2
+    127e:	addi	a1,a1,-1786 # 2b80 <_IO_stdin_used+0x90>
+    1282:	auipc	a0,0x2
+    1286:	addi	a0,a0,-1762 # 2ba0 <_IO_stdin_used+0xb0>
+    128a:	jal	b60 <__assert_fail@plt>
+    128e:	auipc	a3,0x2
+    1292:	addi	a3,a3,-1046 # 2e78 <__PRETTY_FUNCTION__.2>
+    1296:	li	a2,370
+    129a:	auipc	a1,0x2
+    129e:	addi	a1,a1,-1818 # 2b80 <_IO_stdin_used+0x90>
+    12a2:	auipc	a0,0x2
+    12a6:	addi	a0,a0,-1810 # 2b90 <_IO_stdin_used+0xa0>
+    12aa:	jal	b60 <__assert_fail@plt>
+

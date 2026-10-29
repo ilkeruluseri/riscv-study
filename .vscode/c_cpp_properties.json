@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "name": "RISC-V GCC",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/lib/gcc-cross/riscv64-linux-gnu/13/include",
+                "/usr/riscv64-linux-gnu/include",
+                "/usr/include"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/riscv64-linux-gnu-gcc",
+            "compilerArgs": [
+                "-march=rv64gcv",
+                "-mabi=lp64d"
+            ],
+            "forcedInclude": [
+                "${workspaceFolder}/.vscode/rvv_intrinsics_intellisense.h"
+            ],
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}

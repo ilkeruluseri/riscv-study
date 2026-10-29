@@ -1,0 +1,36 @@
+--- a/ggml/src/ggml-cpu/arch/riscv/quants.c
++++ b/ggml/src/ggml-cpu/arch/riscv/quants.c
+@@ -5528,6 +5528,16 @@
+         sumf += ((GGML_CPU_FP16_TO_FP32(x[ib + 1].d) * GGML_CPU_FP16_TO_FP32(y[ib + 1].d) * acc2));
+     }
+ 
++    if (ib < nb) {
++        const float d = GGML_CPU_FP16_TO_FP32(y[ib].d) * GGML_CPU_FP16_TO_FP32(x[ib].d);
++        int sumi1 = 0, sumi2 = 0;
++        for (int j = 0; j < QK4_NL/2; ++j) {
++            sumi1 += y[ib].qs[j] * kvalues_iq4nl[x[ib].qs[j] & 0xf];
++            sumi2 += y[ib].qs[j + QK4_NL/2] * kvalues_iq4nl[x[ib].qs[j] >> 4];
++        }
++        sumf += d * (sumi1 + sumi2);
++    }
++
+     *s = sumf;
+ }
+ 
+@@ -5583,6 +5593,16 @@
+         __riscv_vse32_v_i32m1(&acc2,__riscv_vwredsum_vs_i16m1_i32m1(sum2, __riscv_vmv_v_x_i32m1(0, 1), 16), 1);
+         sumf += ((GGML_CPU_FP16_TO_FP32(x[ib + 0].d) * GGML_CPU_FP16_TO_FP32(y[ib + 0].d) * acc1));
+         sumf += ((GGML_CPU_FP16_TO_FP32(x[ib + 1].d) * GGML_CPU_FP16_TO_FP32(y[ib + 1].d) * acc2));
++    }
++
++    if (ib < nb) {
++        const float d = GGML_CPU_FP16_TO_FP32(y[ib].d) * GGML_CPU_FP16_TO_FP32(x[ib].d);
++        int sumi1 = 0, sumi2 = 0;
++        for (int j = 0; j < QK4_NL/2; ++j) {
++            sumi1 += y[ib].qs[j] * kvalues_iq4nl[x[ib].qs[j] & 0xf];
++            sumi2 += y[ib].qs[j + QK4_NL/2] * kvalues_iq4nl[x[ib].qs[j] >> 4];
++        }
++        sumf += d * (sumi1 + sumi2);
+     }
+ 
+     *s = sumf;

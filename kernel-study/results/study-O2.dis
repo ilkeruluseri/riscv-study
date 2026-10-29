@@ -1,0 +1,2704 @@
+
+results/study-O2:     file format elf64-littleriscv
+
+
+Disassembly of section .plt:
+
+0000000000000a80 <.plt>:
+ a80:	auipc	t2,0x4
+ a84:	sub	t1,t1,t3
+ a88:	ld	t3,1176(t2) # 4f18 <.got>
+ a8c:	addi	t1,t1,-44
+ a90:	addi	t0,t2,1176
+ a94:	srli	t1,t1,0x1
+ a98:	ld	t0,8(t0)
+ a9c:	jr	t3
+
+0000000000000aa0 <__libc_start_main@plt>:
+ aa0:	auipc	t3,0x4
+ aa4:	ld	t3,1160(t3) # 4f28 <__libc_start_main@GLIBC_2.34>
+ aa8:	jalr	t1,t3
+ aac:	nop
+
+0000000000000ab0 <fwrite@plt>:
+ ab0:	auipc	t3,0x4
+ ab4:	ld	t3,1152(t3) # 4f30 <fwrite@GLIBC_2.27>
+ ab8:	jalr	t1,t3
+ abc:	nop
+
+0000000000000ac0 <munmap@plt>:
+ ac0:	auipc	t3,0x4
+ ac4:	ld	t3,1144(t3) # 4f38 <munmap@GLIBC_2.27>
+ ac8:	jalr	t1,t3
+ acc:	nop
+
+0000000000000ad0 <__fprintf_chk@plt>:
+ ad0:	auipc	t3,0x4
+ ad4:	ld	t3,1136(t3) # 4f40 <__fprintf_chk@GLIBC_2.27>
+ ad8:	jalr	t1,t3
+ adc:	nop
+
+0000000000000ae0 <__printf_chk@plt>:
+ ae0:	auipc	t3,0x4
+ ae4:	ld	t3,1128(t3) # 4f48 <__printf_chk@GLIBC_2.27>
+ ae8:	jalr	t1,t3
+ aec:	nop
+
+0000000000000af0 <fputc@plt>:
+ af0:	auipc	t3,0x4
+ af4:	ld	t3,1120(t3) # 4f50 <fputc@GLIBC_2.27>
+ af8:	jalr	t1,t3
+ afc:	nop
+
+0000000000000b00 <__errno_location@plt>:
+ b00:	auipc	t3,0x4
+ b04:	ld	t3,1112(t3) # 4f58 <__errno_location@GLIBC_2.27>
+ b08:	jalr	t1,t3
+ b0c:	nop
+
+0000000000000b10 <__stack_chk_fail@plt>:
+ b10:	auipc	t3,0x4
+ b14:	ld	t3,1104(t3) # 4f60 <__stack_chk_fail@GLIBC_2.27>
+ b18:	jalr	t1,t3
+ b1c:	nop
+
+0000000000000b20 <memcpy@plt>:
+ b20:	auipc	t3,0x4
+ b24:	ld	t3,1096(t3) # 4f68 <memcpy@GLIBC_2.27>
+ b28:	jalr	t1,t3
+ b2c:	nop
+
+0000000000000b30 <sysconf@plt>:
+ b30:	auipc	t3,0x4
+ b34:	ld	t3,1088(t3) # 4f70 <sysconf@GLIBC_2.27>
+ b38:	jalr	t1,t3
+ b3c:	nop
+
+0000000000000b40 <clock_gettime@plt>:
+ b40:	auipc	t3,0x4
+ b44:	ld	t3,1080(t3) # 4f78 <clock_gettime@GLIBC_2.27>
+ b48:	jalr	t1,t3
+ b4c:	nop
+
+0000000000000b50 <__isoc23_strtol@plt>:
+ b50:	auipc	t3,0x4
+ b54:	ld	t3,1072(t3) # 4f80 <__isoc23_strtol@GLIBC_2.38>
+ b58:	jalr	t1,t3
+ b5c:	nop
+
+0000000000000b60 <__assert_fail@plt>:
+ b60:	auipc	t3,0x4
+ b64:	ld	t3,1064(t3) # 4f88 <__assert_fail@GLIBC_2.27>
+ b68:	jalr	t1,t3
+ b6c:	nop
+
+0000000000000b70 <puts@plt>:
+ b70:	auipc	t3,0x4
+ b74:	ld	t3,1056(t3) # 4f90 <puts@GLIBC_2.27>
+ b78:	jalr	t1,t3
+ b7c:	nop
+
+0000000000000b80 <perror@plt>:
+ b80:	auipc	t3,0x4
+ b84:	ld	t3,1048(t3) # 4f98 <perror@GLIBC_2.27>
+ b88:	jalr	t1,t3
+ b8c:	nop
+
+0000000000000b90 <exit@plt>:
+ b90:	auipc	t3,0x4
+ b94:	ld	t3,1040(t3) # 4fa0 <exit@GLIBC_2.27>
+ b98:	jalr	t1,t3
+ b9c:	nop
+
+0000000000000ba0 <mprotect@plt>:
+ ba0:	auipc	t3,0x4
+ ba4:	ld	t3,1032(t3) # 4fa8 <mprotect@GLIBC_2.27>
+ ba8:	jalr	t1,t3
+ bac:	nop
+
+0000000000000bb0 <strcmp@plt>:
+ bb0:	auipc	t3,0x4
+ bb4:	ld	t3,1024(t3) # 4fb0 <strcmp@GLIBC_2.27>
+ bb8:	jalr	t1,t3
+ bbc:	nop
+
+0000000000000bc0 <mmap@plt>:
+ bc0:	auipc	t3,0x4
+ bc4:	ld	t3,1016(t3) # 4fb8 <mmap@GLIBC_2.27>
+ bc8:	jalr	t1,t3
+ bcc:	nop
+
+0000000000000bd0 <memset@plt>:
+ bd0:	auipc	t3,0x4
+ bd4:	ld	t3,1008(t3) # 4fc0 <memset@GLIBC_2.27>
+ bd8:	jalr	t1,t3
+ bdc:	nop
+
+Disassembly of section .text:
+
+0000000000000be0 <main>:
+     be0:	addi	sp,sp,-48
+     be2:	sd	s0,32(sp)
+     be4:	sd	s1,24(sp)
+     be6:	mv	s0,a0
+     be8:	mv	s1,a1
+     bea:	sd	ra,40(sp)
+     bec:	sd	s2,16(sp)
+     bee:	auipc	a1,0x4
+     bf2:	addi	a1,a1,1074 # 5020 <ggml_table_f32_f16>
+     bf6:	auipc	t6,0x44
+     bfa:	addi	t6,t6,1066 # 45020 <__BSS_END__>
+     bfe:	li	a2,0
+     c00:	li	a0,0
+     c02:	lui	t5,0x80000
+     c06:	lui	t4,0x8000
+     c0a:	lui	t3,0x70000
+     c0e:	auipc	a5,0x2
+     c12:	flw	fa4,-274(a5) # 2afc <_IO_stdin_used+0xc>
+     c16:	lui	t1,0x3f000
+     c1a:	auipc	a5,0x2
+     c1e:	flw	fa5,-290(a5) # 2af8 <_IO_stdin_used+0x8>
+     c22:	lui	a7,0x10
+     c24:	lui	a6,0x20
+     c28:	j	c4e <main+0x6e>
+     c2a:	fmv.w.x	fa3,a4
+     c2e:	addi	a1,a1,4
+     c30:	addw	a0,a7,a0
+     c34:	fsub.s	fa3,fa3,fa5
+     c38:	addw	a2,a6,a2
+     c3c:	fmv.x.w	a4,fa3
+     c40:	sext.w	a5,a4
+     c44:	or	a5,a5,a3
+     c46:	sw	a5,-4(a1)
+     c4a:	beq	t6,a1,c8a <main+0xaa>
+     c4e:	srliw	a4,a2,0x11
+     c52:	srliw	a5,a2,0x4
+     c56:	and	a3,a0,t5
+     c5a:	or	a4,a4,t1
+     c5e:	addw	a5,a5,t3
+     c62:	sext.w	a3,a3
+     c64:	bltu	a2,t4,c2a <main+0x4a>
+     c68:	fmv.w.x	fa3,a5
+     c6c:	addi	a1,a1,4
+     c6e:	addw	a0,a7,a0
+     c72:	fmul.s	fa3,fa3,fa4
+     c76:	addw	a2,a6,a2
+     c7a:	fmv.x.w	a5,fa3
+     c7e:	sext.w	a5,a5
+     c80:	or	a5,a5,a3
+     c82:	sw	a5,-4(a1)
+     c86:	bne	t6,a1,c4e <main+0x6e>
+     c8a:	csrr	a3,vlenb
+     c8e:	slli	a3,a3,0x3
+     c90:	addi	a5,a3,-128
+     c94:	auipc	s2,0x4
+     c98:	ld	s2,852(s2) # 4fe8 <stderr@GLIBC_2.27>
+     c9c:	andi	a5,a5,-129
+     ca0:	ld	a0,0(s2)
+     ca4:	beqz	a5,cae <main+0xce>
+     ca6:	li	a5,512
+     caa:	bne	a3,a5,d2c <main+0x14c>
+     cae:	auipc	a4,0x4
+     cb2:	lw	a4,858(a4) # 5008 <state>
+     cb6:	auipc	a2,0x2
+     cba:	addi	a2,a2,346 # 2e10 <_IO_stdin_used+0x320>
+     cbe:	li	a1,2
+     cc0:	jal	ad0 <__fprintf_chk@plt>
+     cc4:	li	a5,1
+     cc6:	bge	a5,s0,d20 <main+0x140>
+     cca:	ld	a0,8(s1)
+     ccc:	auipc	a1,0x2
+     cd0:	addi	a1,a1,348 # 2e28 <_IO_stdin_used+0x338>
+     cd4:	jal	bb0 <strcmp@plt>
+     cd8:	bnez	a0,cfe <main+0x11e>
+     cda:	sd	s3,8(sp)
+     cdc:	li	s3,4
+     cde:	blt	s3,s0,cfc <main+0x11c>
+     ce2:	li	a5,2
+     ce4:	bne	s0,a5,d3c <main+0x15c>
+     ce8:	lui	s2,0x2
+     cea:	addi	s2,s2,1808 # 2710 <benchmark+0x1ac>
+     cee:	li	a1,21
+     cf0:	mv	a0,s2
+     cf2:	jal	2564 <benchmark>
+     cf6:	li	a0,0
+     cf8:	ld	s3,8(sp)
+     cfa:	j	d14 <main+0x134>
+     cfc:	ld	s3,8(sp)
+     cfe:	ld	a3,0(s1)
+     d00:	ld	a0,0(s2)
+     d04:	auipc	a2,0x2
+     d08:	addi	a2,a2,300 # 2e30 <_IO_stdin_used+0x340>
+     d0c:	li	a1,2
+     d0e:	jal	ad0 <__fprintf_chk@plt>
+     d12:	li	a0,2
+     d14:	ld	ra,40(sp)
+     d16:	ld	s0,32(sp)
+     d18:	ld	s1,24(sp)
+     d1a:	ld	s2,16(sp)
+     d1c:	addi	sp,sp,48
+     d1e:	ret
+     d20:	bne	s0,a5,cfe <main+0x11e>
+     d24:	jal	2780 <tests>
+     d28:	li	a0,0
+     d2a:	j	d14 <main+0x134>
+     d2c:	auipc	a2,0x2
+     d30:	addi	a2,a2,172 # 2dd8 <_IO_stdin_used+0x2e8>
+     d34:	li	a1,2
+     d36:	jal	ad0 <__fprintf_chk@plt>
+     d3a:	j	d12 <main+0x132>
+     d3c:	ld	a0,16(s1)
+     d3e:	lui	a1,0x989
+     d42:	addi	a1,a1,1664 # 989680 <__BSS_END__+0x944660>
+     d46:	jal	f3a <positive_number>
+     d4a:	mv	s2,a0
+     d4c:	li	a1,21
+     d4e:	bne	s0,s3,cf0 <main+0x110>
+     d52:	ld	a0,24(s1)
+     d54:	li	a1,1001
+     d58:	jal	f3a <positive_number>
+     d5c:	mv	a1,a0
+     d5e:	j	cf0 <main+0x110>
+
+0000000000000d60 <_start>:
+     d60:	jal	d82 <load_gp>
+     d64:	mv	a5,a0
+     d66:	auipc	a0,0x4
+     d6a:	ld	a0,634(a0) # 4fe0 <_GLOBAL_OFFSET_TABLE_+0x18>
+     d6e:	ld	a1,0(sp)
+     d70:	addi	a2,sp,8
+     d72:	andi	sp,sp,-16
+     d76:	li	a3,0
+     d78:	li	a4,0
+     d7a:	mv	a6,sp
+     d7c:	jal	aa0 <__libc_start_main@plt>
+     d80:	ebreak
+
+0000000000000d82 <load_gp>:
+     d82:	auipc	gp,0x5
+     d86:	addi	gp,gp,-1398 # 580c <__global_pointer$>
+     d8a:	ret
+	...
+
+0000000000000d8e <deregister_tm_clones>:
+     d8e:	addi	sp,sp,-16
+     d90:	sd	s0,8(sp)
+     d92:	addi	s0,sp,16
+     d94:	auipc	a0,0x4
+     d98:	addi	a0,a0,636 # 5010 <__TMC_END__>
+     d9c:	auipc	a5,0x4
+     da0:	addi	a5,a5,628 # 5010 <__TMC_END__>
+     da4:	beq	a5,a0,db8 <deregister_tm_clones+0x2a>
+     da8:	auipc	a5,0x4
+     dac:	ld	a5,552(a5) # 4fd0 <_ITM_deregisterTMCloneTable@Base>
+     db0:	beqz	a5,db8 <deregister_tm_clones+0x2a>
+     db2:	ld	s0,8(sp)
+     db4:	addi	sp,sp,16
+     db6:	jr	a5
+     db8:	ld	s0,8(sp)
+     dba:	addi	sp,sp,16
+     dbc:	ret
+
+0000000000000dbe <register_tm_clones>:
+     dbe:	auipc	a0,0x4
+     dc2:	addi	a0,a0,594 # 5010 <__TMC_END__>
+     dc6:	auipc	a1,0x4
+     dca:	addi	a1,a1,586 # 5010 <__TMC_END__>
+     dce:	sub	a1,a1,a0
+     dd0:	addi	sp,sp,-16
+     dd2:	srai	a5,a1,0x3
+     dd6:	srli	a1,a1,0x3f
+     dd8:	sd	s0,8(sp)
+     dda:	add	a1,a1,a5
+     ddc:	addi	s0,sp,16
+     dde:	srai	a1,a1,0x1
+     de0:	beqz	a1,df2 <register_tm_clones+0x34>
+     de2:	auipc	a5,0x4
+     de6:	ld	a5,534(a5) # 4ff8 <_ITM_registerTMCloneTable@Base>
+     dea:	beqz	a5,df2 <register_tm_clones+0x34>
+     dec:	ld	s0,8(sp)
+     dee:	addi	sp,sp,16
+     df0:	jr	a5
+     df2:	ld	s0,8(sp)
+     df4:	addi	sp,sp,16
+     df6:	ret
+
+0000000000000df8 <__do_global_dtors_aux>:
+     df8:	addi	sp,sp,-32
+     dfa:	sd	s0,16(sp)
+     dfc:	sd	s1,8(sp)
+     dfe:	sd	ra,24(sp)
+     e00:	addi	s0,sp,32
+     e02:	auipc	s1,0x4
+     e06:	addi	s1,s1,526 # 5010 <__TMC_END__>
+     e0a:	lbu	a5,0(s1)
+     e0e:	bnez	a5,e2e <__do_global_dtors_aux+0x36>
+     e10:	auipc	a5,0x4
+     e14:	ld	a5,480(a5) # 4ff0 <__cxa_finalize@GLIBC_2.27>
+     e18:	beqz	a5,e24 <__do_global_dtors_aux+0x2c>
+     e1a:	auipc	a0,0x4
+     e1e:	ld	a0,486(a0) # 5000 <__dso_handle>
+     e22:	jalr	a5
+     e24:	jal	d8e <deregister_tm_clones>
+     e28:	li	a5,1
+     e2a:	sb	a5,0(s1)
+     e2e:	ld	ra,24(sp)
+     e30:	ld	s0,16(sp)
+     e32:	ld	s1,8(sp)
+     e34:	addi	sp,sp,32
+     e36:	ret
+
+0000000000000e38 <frame_dummy>:
+     e38:	addi	sp,sp,-16
+     e3a:	sd	s0,8(sp)
+     e3c:	addi	s0,sp,16
+     e3e:	ld	s0,8(sp)
+     e40:	addi	sp,sp,16
+     e42:	j	dbe <register_tm_clones>
+
+0000000000000e44 <guard_input>:
+     e44:	addi	sp,sp,-96
+     e46:	sd	s2,64(sp)
+     e48:	mv	s2,a0
+     e4a:	li	a0,30
+     e4c:	sd	s3,56(sp)
+     e4e:	sd	s4,48(sp)
+     e50:	sd	s6,32(sp)
+     e52:	sd	ra,88(sp)
+     e54:	sd	s0,80(sp)
+     e56:	sd	s1,72(sp)
+     e58:	sd	s5,40(sp)
+     e5a:	sd	s7,24(sp)
+     e5c:	sd	s8,16(sp)
+     e5e:	sd	s9,8(sp)
+     e60:	mv	s4,a1
+     e62:	mv	s3,a2
+     e64:	mv	s6,a3
+     e66:	jal	b30 <sysconf@plt>
+     e6a:	blez	a0,f28 <guard_input+0xe4>
+     e6e:	addi	s0,s3,-1
+     e72:	add	s0,s0,a0
+     e74:	divu	s0,s0,a0
+     e78:	mv	s1,a0
+     e7a:	slli	s5,a0,0x1
+     e7e:	li	a5,0
+     e80:	li	a4,-1
+     e82:	li	a3,34
+     e86:	li	a2,0
+     e88:	li	a0,0
+     e8a:	addi	s0,s0,1
+     e8c:	mul	s0,s0,s1
+     e90:	add	s5,s5,s0
+     e92:	mv	a1,s5
+     e94:	jal	bc0 <mmap@plt>
+     e98:	li	a5,-1
+     e9a:	mv	s7,a0
+     e9c:	beq	a0,a5,f16 <guard_input+0xd2>
+     ea0:	add	s8,a0,s1
+     ea4:	li	a2,3
+     ea6:	mv	a1,s0
+     ea8:	mv	a0,s8
+     eaa:	jal	ba0 <mprotect@plt>
+     eae:	bnez	a0,f04 <guard_input+0xc0>
+     eb0:	mv	s9,s8
+     eb2:	beqz	s6,ec0 <guard_input+0x7c>
+     eb6:	sub	s1,s1,s3
+     eba:	add	s1,s1,s0
+     ebc:	add	s9,s7,s1
+     ec0:	bnez	s3,ef8 <guard_input+0xb4>
+     ec4:	li	a2,1
+     ec6:	mv	a1,s0
+     ec8:	mv	a0,s8
+     eca:	jal	ba0 <mprotect@plt>
+     ece:	bnez	a0,f04 <guard_input+0xc0>
+     ed0:	ld	ra,88(sp)
+     ed2:	ld	s0,80(sp)
+     ed4:	sd	s7,0(s2)
+     ed8:	sd	s5,8(s2)
+     edc:	sd	s9,16(s2)
+     ee0:	ld	s1,72(sp)
+     ee2:	ld	s3,56(sp)
+     ee4:	ld	s4,48(sp)
+     ee6:	ld	s5,40(sp)
+     ee8:	ld	s6,32(sp)
+     eea:	ld	s7,24(sp)
+     eec:	ld	s8,16(sp)
+     eee:	ld	s9,8(sp)
+     ef0:	mv	a0,s2
+     ef2:	ld	s2,64(sp)
+     ef4:	addi	sp,sp,96
+     ef6:	ret
+     ef8:	mv	a2,s3
+     efa:	mv	a1,s4
+     efc:	mv	a0,s9
+     efe:	jal	b20 <memcpy@plt>
+     f02:	j	ec4 <guard_input+0x80>
+     f04:	auipc	a0,0x2
+     f08:	addi	a0,a0,-988 # 2b28 <_IO_stdin_used+0x38>
+     f0c:	jal	b80 <perror@plt>
+     f10:	li	a0,1
+     f12:	jal	b90 <exit@plt>
+     f16:	auipc	a0,0x2
+     f1a:	addi	a0,a0,-1022 # 2b18 <_IO_stdin_used+0x28>
+     f1e:	jal	b80 <perror@plt>
+     f22:	li	a0,1
+     f24:	jal	b90 <exit@plt>
+     f28:	auipc	a0,0x2
+     f2c:	addi	a0,a0,-1048 # 2b10 <_IO_stdin_used+0x20>
+     f30:	jal	b80 <perror@plt>
+     f34:	li	a0,1
+     f36:	jal	b90 <exit@plt>
+
+0000000000000f3a <positive_number>:
+     f3a:	addi	sp,sp,-64
+     f3c:	sd	s3,24(sp)
+     f3e:	auipc	s3,0x4
+     f42:	ld	s3,154(s3) # 4fd8 <__stack_chk_guard@GLIBC_2.27>
+     f46:	ld	a5,0(s3)
+     f4a:	sd	a5,8(sp)
+     f4c:	li	a5,0
+     f4e:	sd	ra,56(sp)
+     f50:	sd	s0,48(sp)
+     f52:	sd	s1,40(sp)
+     f54:	sd	s2,32(sp)
+     f56:	mv	s0,a0
+     f58:	mv	s2,a1
+     f5a:	jal	b00 <__errno_location@plt>
+     f5e:	mv	s1,a0
+     f60:	sw	zero,0(a0)
+     f64:	li	a2,10
+     f66:	mv	a1,sp
+     f68:	mv	a0,s0
+     f6a:	jal	b50 <__isoc23_strtol@plt>
+     f6e:	lw	a5,0(s1)
+     f70:	bnez	a5,fa2 <positive_number+0x68>
+     f72:	ld	a5,0(sp)
+     f74:	lbu	a4,0(a5)
+     f78:	bnez	a4,fa2 <positive_number+0x68>
+     f7a:	beq	a5,s0,fa2 <positive_number+0x68>
+     f7e:	blez	a0,fa2 <positive_number+0x68>
+     f82:	blt	s2,a0,fa2 <positive_number+0x68>
+     f86:	ld	a4,8(sp)
+     f88:	ld	a5,0(s3)
+     f8c:	xor	a5,a5,a4
+     f8e:	li	a4,0
+     f90:	sext.w	a0,a0
+     f92:	bnez	a5,fc4 <positive_number+0x8a>
+     f94:	ld	ra,56(sp)
+     f96:	ld	s0,48(sp)
+     f98:	ld	s1,40(sp)
+     f9a:	ld	s2,32(sp)
+     f9c:	ld	s3,24(sp)
+     f9e:	addi	sp,sp,64
+     fa0:	ret
+     fa2:	auipc	a5,0x4
+     fa6:	ld	a5,70(a5) # 4fe8 <stderr@GLIBC_2.27>
+     faa:	ld	a0,0(a5)
+     fac:	mv	a4,s0
+     fae:	mv	a3,s2
+     fb0:	auipc	a2,0x2
+     fb4:	addi	a2,a2,-1144 # 2b38 <_IO_stdin_used+0x48>
+     fb8:	li	a1,2
+     fba:	jal	ad0 <__fprintf_chk@plt>
+     fbe:	li	a0,2
+     fc0:	jal	b90 <exit@plt>
+     fc4:	jal	b10 <__stack_chk_fail@plt>
+
+0000000000000fc8 <invoke>:
+     fc8:	addi	sp,sp,-64
+     fca:	mv	t1,a3
+     fcc:	sd	s0,48(sp)
+     fce:	slliw	t1,t1,0x5
+     fd2:	auipc	s0,0x4
+     fd6:	ld	s0,6(s0) # 4fd8 <__stack_chk_guard@GLIBC_2.27>
+     fda:	mv	t3,a0
+     fdc:	sext.w	a0,t1
+     fe0:	ld	t1,0(s0)
+     fe4:	sd	t1,24(sp)
+     fe6:	li	t1,0
+     fe8:	fsd	fs0,40(sp)
+     fea:	auipc	t1,0x2
+     fee:	ld	t1,-394(t1) # 2e60 <_IO_stdin_used+0x370>
+     ff2:	auipc	a4,0x2
+     ff6:	flw	fs0,-1278(a4) # 2af4 <_IO_stdin_used+0x4>
+     ffa:	mv	a5,a2
+     ffc:	mv	a3,a1
+     ffe:	sd	ra,56(sp)
+    1000:	li	a7,1
+    1002:	li	a6,0
+    1004:	li	a4,0
+    1006:	li	a2,0
+    1008:	addi	a1,sp,12
+    100a:	sd	t1,8(sp)
+    100c:	fsw	fs0,16(sp)
+    1010:	jalr	t3
+    1012:	flw	fa4,8(sp)
+    1016:	auipc	a5,0x2
+    101a:	flw	fa5,-438(a5) # 2e60 <_IO_stdin_used+0x370>
+    101e:	feq.s	a5,fa4,fa5
+    1022:	beqz	a5,1046 <invoke+0x7e>
+    1024:	flw	fa5,16(sp)
+    1028:	feq.s	a5,fa5,fs0
+    102c:	beqz	a5,1046 <invoke+0x7e>
+    102e:	ld	a4,24(sp)
+    1030:	ld	a5,0(s0)
+    1032:	xor	a5,a5,a4
+    1034:	li	a4,0
+    1036:	flw	fa0,12(sp)
+    103a:	bnez	a5,106c <invoke+0xa4>
+    103c:	ld	ra,56(sp)
+    103e:	ld	s0,48(sp)
+    1040:	fld	fs0,40(sp)
+    1042:	addi	sp,sp,64
+    1044:	ret
+    1046:	auipc	a5,0x4
+    104a:	ld	a5,-94(a5) # 4fe8 <stderr@GLIBC_2.27>
+    104e:	ld	a0,0(a5)
+    1050:	auipc	a3,0x4
+    1054:	lw	a3,-56(a3) # 5018 <case_number>
+    1058:	auipc	a2,0x2
+    105c:	addi	a2,a2,-1280 # 2b58 <_IO_stdin_used+0x68>
+    1060:	li	a1,2
+    1062:	jal	ad0 <__fprintf_chk@plt>
+    1066:	li	a0,1
+    1068:	jal	b90 <exit@plt>
+    106c:	jal	b10 <__stack_chk_fail@plt>
+
+0000000000001070 <candidate_vl256.isra.0>:
+    1070:	addi	sp,sp,-32
+    1072:	auipc	t3,0x4
+    1076:	ld	t3,-154(t3) # 4fd8 <__stack_chk_guard@GLIBC_2.27>
+    107a:	ld	a5,0(t3)
+    107e:	sd	a5,8(sp)
+    1080:	li	a5,0
+    1082:	sd	ra,24(sp)
+    1084:	li	a5,1
+    1086:	vsetivli	zero,16,e8,mf2,ta,ma
+    108a:	bne	a4,a5,128e <candidate_vl256.isra.0+0x21e>
+    108e:	andi	t4,a0,31
+    1092:	bnez	t4,126e <candidate_vl256.isra.0+0x1fe>
+    1096:	sraiw	t0,a0,0x1f
+    109a:	srliw	t0,t0,0x1b
+    109e:	addw	t0,t0,a0
+    10a2:	sraiw	t2,t0,0x5
+    10a6:	auipc	a4,0x2
+    10aa:	addi	a4,a4,-542 # 2e88 <kvalues_iq4nl>
+    10ae:	li	a5,63
+    10b2:	fmv.w.x	fa5,zero
+    10b6:	mv	t0,t2
+    10b8:	vle8.v	v25,(a4)
+    10bc:	bge	a5,a0,1262 <candidate_vl256.isra.0+0x1f2>
+    10c0:	addi	a4,a2,2
+    10c4:	addi	a5,a3,2
+    10c8:	li	t6,0
+    10ca:	auipc	t5,0x4
+    10ce:	addi	t5,t5,-170 # 5020 <ggml_table_f32_f16>
+    10d2:	vsetivli	zero,1,e32,m1,ta,ma
+    10d6:	vmv.v.i	v26,0
+    10da:	lhu	t1,-2(a4)
+    10de:	lhu	a7,-2(a5)
+    10e2:	lhu	a6,16(a4)
+    10e6:	slli	t1,t1,0x2
+    10e8:	slli	a7,a7,0x2
+    10ea:	add	a7,a7,t5
+    10ec:	add	t1,t1,t5
+    10ee:	flw	fa4,0(a7) # 10000 <__global_pointer$+0xa7f4>
+    10f2:	lhu	a0,32(a5)
+    10f6:	flw	fa3,0(t1)
+    10fa:	vsetivli	zero,16,e8,mf2,ta,ma
+    10fe:	addi	a7,a5,16
+    1102:	vle8.v	v24,(a4)
+    1106:	fmul.s	fa3,fa3,fa4
+    110a:	vand.vi	v27,v24,15
+    110e:	slli	a6,a6,0x2
+    1110:	vsrl.vi	v24,v24,4
+    1114:	slli	a0,a0,0x2
+    1116:	vle8.v	v30,(a5)
+    111a:	vle8.v	v28,(a7)
+    111e:	vrgather.vv	v29,v25,v27
+    1122:	add	a6,a6,t5
+    1124:	vrgather.vv	v27,v25,v24
+    1128:	add	a0,a0,t5
+    112a:	vwmul.vv	v24,v30,v29
+    112e:	vwmacc.vv	v24,v28,v27
+    1132:	vsetvli	zero,zero,e16,m1,ta,ma
+    1136:	flw	fa4,0(a6) # 20000 <__global_pointer$+0x1a7f4>
+    113a:	vwredsum.vs	v27,v24,v26
+    113e:	flw	fa1,0(a0)
+    1142:	vsetivli	zero,0,e32,m1,ta,ma
+    1146:	vmv.x.s	a0,v27
+    114a:	fcvt.s.w	fa2,a0
+    114e:	addi	a7,a4,18
+    1152:	vsetivli	zero,16,e8,mf2,ta,ma
+    1156:	addi	a0,a5,50
+    115a:	vle8.v	v24,(a7)
+    115e:	fmadd.s	fa5,fa3,fa2,fa5
+    1162:	vand.vi	v27,v24,15
+    1166:	addi	a6,a5,34
+    116a:	vsrl.vi	v24,v24,4
+    116e:	fmul.s	fa4,fa4,fa1
+    1172:	vle8.v	v28,(a0)
+    1176:	vrgather.vv	v29,v25,v27
+    117a:	vle8.v	v30,(a6)
+    117e:	vrgather.vv	v27,v25,v24
+    1182:	vwmul.vv	v24,v30,v29
+    1186:	vwmacc.vv	v24,v28,v27
+    118a:	vsetvli	zero,zero,e16,m1,ta,ma
+    118e:	vwredsum.vs	v27,v24,v26
+    1192:	vsetivli	zero,0,e32,m1,ta,ma
+    1196:	vmv.x.s	a0,v27
+    119a:	fcvt.s.w	fa3,a0
+    119e:	addiw	a0,t6,3
+    11a2:	addi	a4,a4,36
+    11a6:	fmadd.s	fa5,fa4,fa3,fa5
+    11aa:	addiw	t6,t6,2
+    11ac:	addi	a5,a5,68
+    11b0:	blt	a0,t2,10da <candidate_vl256.isra.0+0x6a>
+    11b4:	addiw	t0,t0,-2
+    11b6:	andi	t0,t0,-2
+    11ba:	addiw	t0,t0,2
+    11bc:	bge	t0,t2,124c <candidate_vl256.isra.0+0x1dc>
+    11c0:	slli	a4,t0,0x4
+    11c4:	slli	a5,t0,0x3
+    11c8:	add	a4,a4,t0
+    11ca:	add	a5,a5,t0
+    11cc:	slli	a4,a4,0x1
+    11ce:	slli	a5,a5,0x1
+    11d0:	add	a3,a3,a4
+    11d2:	add	a2,a2,a5
+    11d4:	lhu	a0,0(a2)
+    11d8:	lhu	a5,0(a3)
+    11dc:	auipc	a4,0x4
+    11e0:	addi	a4,a4,-444 # 5020 <ggml_table_f32_f16>
+    11e4:	slli	a0,a0,0x2
+    11e6:	slli	a5,a5,0x2
+    11e8:	add	a5,a5,a4
+    11ea:	add	a4,a4,a0
+    11ec:	flw	fa4,0(a5)
+    11f0:	flw	fa3,0(a4)
+    11f4:	addi	a6,a3,2
+    11f8:	addi	a2,a2,2
+    11fa:	fmul.s	fa4,fa4,fa3
+    11fe:	addi	a3,a3,18
+    1200:	li	t1,0
+    1202:	auipc	a7,0x2
+    1206:	addi	a7,a7,-906 # 2e78 <__PRETTY_FUNCTION__.2>
+    120a:	lbu	a5,0(a2)
+    120e:	lb	t6,0(a6)
+    1212:	lb	t5,16(a6)
+    1216:	andi	a4,a5,15
+    121a:	srli	a5,a5,0x4
+    121c:	add	a5,a5,a7
+    121e:	add	a4,a4,a7
+    1220:	lb	a4,16(a4)
+    1224:	lb	a0,16(a5)
+    1228:	addi	a6,a6,1
+    122a:	mulw	a5,a4,t6
+    122e:	addi	a2,a2,1
+    1230:	mulw	a4,a0,t5
+    1234:	addw	t4,a5,t4
+    1238:	addw	t1,a4,t1
+    123c:	bne	a6,a3,120a <candidate_vl256.isra.0+0x19a>
+    1240:	addw	a5,t4,t1
+    1244:	fcvt.s.w	fa3,a5
+    1248:	fmadd.s	fa5,fa4,fa3,fa5
+    124c:	fsw	fa5,0(a1)
+    1250:	ld	a4,8(sp)
+    1252:	ld	a5,0(t3)
+    1256:	xor	a5,a5,a4
+    1258:	li	a4,0
+    125a:	bnez	a5,126a <candidate_vl256.isra.0+0x1fa>
+    125c:	ld	ra,24(sp)
+    125e:	addi	sp,sp,32
+    1260:	ret
+    1262:	li	t0,0
+    1264:	bge	t0,t2,124c <candidate_vl256.isra.0+0x1dc>
+    1268:	j	11c0 <candidate_vl256.isra.0+0x150>
+    126a:	jal	b10 <__stack_chk_fail@plt>
+    126e:	auipc	a3,0x2
+    1272:	addi	a3,a3,-1014 # 2e78 <__PRETTY_FUNCTION__.2>
+    1276:	li	a2,375
+    127a:	auipc	a1,0x2
+    127e:	addi	a1,a1,-1786 # 2b80 <_IO_stdin_used+0x90>
+    1282:	auipc	a0,0x2
+    1286:	addi	a0,a0,-1762 # 2ba0 <_IO_stdin_used+0xb0>
+    128a:	jal	b60 <__assert_fail@plt>
+    128e:	auipc	a3,0x2
+    1292:	addi	a3,a3,-1046 # 2e78 <__PRETTY_FUNCTION__.2>
+    1296:	li	a2,370
+    129a:	auipc	a1,0x2
+    129e:	addi	a1,a1,-1818 # 2b80 <_IO_stdin_used+0x90>
+    12a2:	auipc	a0,0x2
+    12a6:	addi	a0,a0,-1810 # 2b90 <_IO_stdin_used+0xa0>
+    12aa:	jal	b60 <__assert_fail@plt>
+
+00000000000012ae <candidate_vl128.isra.0>:
+    12ae:	addi	sp,sp,-32
+    12b0:	auipc	t4,0x4
+    12b4:	ld	t4,-728(t4) # 4fd8 <__stack_chk_guard@GLIBC_2.27>
+    12b8:	ld	a5,0(t4)
+    12bc:	sd	a5,8(sp)
+    12be:	li	a5,0
+    12c0:	sd	ra,24(sp)
+    12c2:	sd	s0,16(sp)
+    12c4:	li	a5,1
+    12c6:	vsetivli	zero,16,e8,m2,ta,ma
+    12ca:	bne	a4,a5,14c8 <candidate_vl128.isra.0+0x21a>
+    12ce:	andi	t5,a0,31
+    12d2:	bnez	t5,14a8 <candidate_vl128.isra.0+0x1fa>
+    12d6:	sraiw	t2,a0,0x1f
+    12da:	srliw	t2,t2,0x1b
+    12de:	addw	t2,t2,a0
+    12e2:	sraiw	s0,t2,0x5
+    12e6:	auipc	a4,0x2
+    12ea:	addi	a4,a4,-1118 # 2e88 <kvalues_iq4nl>
+    12ee:	li	a5,63
+    12f2:	fmv.w.x	fa5,zero
+    12f6:	mv	t2,s0
+    12f8:	vle8.v	v28,(a4)
+    12fc:	bge	a5,a0,149c <candidate_vl128.isra.0+0x1ee>
+    1300:	vsetivli	zero,1,e32,m1,ta,ma
+    1304:	addi	a0,a2,2
+    1308:	addi	a4,a3,2
+    130c:	li	t0,0
+    130e:	auipc	t6,0x4
+    1312:	addi	t6,t6,-750 # 5020 <ggml_table_f32_f16>
+    1316:	li	a5,32
+    131a:	vmv.v.i	v27,0
+    131e:	vsetivli	zero,16,e8,m1,ta,ma
+    1322:	lhu	t3,-2(a0)
+    1326:	lhu	t1,-2(a4)
+    132a:	lhu	a7,16(a0)
+    132e:	slli	t3,t3,0x2
+    1330:	slli	t1,t1,0x2
+    1332:	add	t3,t3,t6
+    1334:	add	t1,t1,t6
+    1336:	lhu	a6,32(a4)
+    133a:	flw	fa4,0(t1)
+    133e:	flw	fa3,0(t3)
+    1342:	vle8.v	v26,(a0)
+    1346:	vsetvli	zero,a5,e8,m2,ta,ma
+    134a:	vle8.v	v14,(a4)
+    134e:	vsetivli	zero,16,e8,m1,ta,ma
+    1352:	fmul.s	fa3,fa3,fa4
+    1356:	vand.vi	v24,v26,15
+    135a:	vsrl.vi	v25,v26,4
+    135e:	slli	a7,a7,0x2
+    1360:	vsetvli	zero,a5,e8,m2,ta,ma
+    1364:	slli	a6,a6,0x2
+    1366:	vrgather.vv	v12,v28,v24
+    136a:	add	a7,a7,t6
+    136c:	vwmul.vv	v8,v14,v12
+    1370:	add	a6,a6,t6
+    1372:	vsetvli	zero,zero,e16,m4,ta,ma
+    1376:	flw	fa4,0(a7)
+    137a:	vwredsum.vs	v24,v8,v27
+    137e:	flw	fa1,0(a6)
+    1382:	vsetivli	zero,16,e32,m4,ta,ma
+    1386:	addi	a7,a0,18
+    138a:	vmv.x.s	a6,v24
+    138e:	fcvt.s.w	fa2,a6
+    1392:	vle8.v	v26,(a7)
+    1396:	addi	a6,a4,34
+    139a:	vsetvli	zero,a5,e8,m2,ta,ma
+    139e:	vle8.v	v14,(a6)
+    13a2:	vsetivli	zero,16,e8,m1,ta,ma
+    13a6:	fmadd.s	fa5,fa3,fa2,fa5
+    13aa:	vand.vi	v24,v26,15
+    13ae:	vsrl.vi	v25,v26,4
+    13b2:	fmul.s	fa4,fa4,fa1
+    13b6:	vsetvli	zero,a5,e8,m2,ta,ma
+    13ba:	vrgather.vv	v12,v28,v24
+    13be:	vwmul.vv	v8,v14,v12
+    13c2:	vsetvli	zero,zero,e16,m4,ta,ma
+    13c6:	vwredsum.vs	v24,v8,v27
+    13ca:	vsetivli	zero,16,e32,m4,ta,ma
+    13ce:	vmv.x.s	a6,v24
+    13d2:	fcvt.s.w	fa3,a6
+    13d6:	addiw	a6,t0,3
+    13da:	addi	a0,a0,36
+    13de:	fmadd.s	fa5,fa4,fa3,fa5
+    13e2:	addiw	t0,t0,2
+    13e4:	addi	a4,a4,68
+    13e8:	blt	a6,s0,1322 <candidate_vl128.isra.0+0x74>
+    13ec:	addiw	t2,t2,-2
+    13ee:	andi	t2,t2,-2
+    13f2:	addiw	t2,t2,2
+    13f4:	bge	t2,s0,1484 <candidate_vl128.isra.0+0x1d6>
+    13f8:	slli	a4,t2,0x4
+    13fc:	slli	a5,t2,0x3
+    1400:	add	a4,a4,t2
+    1402:	add	a5,a5,t2
+    1404:	slli	a4,a4,0x1
+    1406:	slli	a5,a5,0x1
+    1408:	add	a3,a3,a4
+    140a:	add	a2,a2,a5
+    140c:	lhu	a0,0(a2)
+    1410:	lhu	a5,0(a3)
+    1414:	auipc	a4,0x4
+    1418:	addi	a4,a4,-1012 # 5020 <ggml_table_f32_f16>
+    141c:	slli	a0,a0,0x2
+    141e:	slli	a5,a5,0x2
+    1420:	add	a5,a5,a4
+    1422:	add	a4,a4,a0
+    1424:	flw	fa4,0(a5)
+    1428:	flw	fa3,0(a4)
+    142c:	addi	a6,a3,2
+    1430:	addi	a2,a2,2
+    1432:	fmul.s	fa4,fa4,fa3
+    1436:	addi	a3,a3,18
+    1438:	li	t1,0
+    143a:	auipc	a7,0x2
+    143e:	addi	a7,a7,-1474 # 2e78 <__PRETTY_FUNCTION__.2>
+    1442:	lbu	a5,0(a2)
+    1446:	lb	t6,0(a6)
+    144a:	lb	t3,16(a6)
+    144e:	andi	a4,a5,15
+    1452:	srli	a5,a5,0x4
+    1454:	add	a5,a5,a7
+    1456:	add	a4,a4,a7
+    1458:	lb	a4,16(a4)
+    145c:	lb	a0,16(a5)
+    1460:	addi	a6,a6,1
+    1462:	mulw	a5,a4,t6
+    1466:	addi	a2,a2,1
+    1468:	mulw	a4,a0,t3
+    146c:	addw	t5,a5,t5
+    1470:	addw	t1,a4,t1
+    1474:	bne	a6,a3,1442 <candidate_vl128.isra.0+0x194>
+    1478:	addw	a5,t5,t1
+    147c:	fcvt.s.w	fa3,a5
+    1480:	fmadd.s	fa5,fa4,fa3,fa5
+    1484:	fsw	fa5,0(a1)
+    1488:	ld	a4,8(sp)
+    148a:	ld	a5,0(t4)
+    148e:	xor	a5,a5,a4
+    1490:	li	a4,0
+    1492:	bnez	a5,14a4 <candidate_vl128.isra.0+0x1f6>
+    1494:	ld	ra,24(sp)
+    1496:	ld	s0,16(sp)
+    1498:	addi	sp,sp,32
+    149a:	ret
+    149c:	li	t2,0
+    149e:	bge	t2,s0,1484 <candidate_vl128.isra.0+0x1d6>
+    14a2:	j	13f8 <candidate_vl128.isra.0+0x14a>
+    14a4:	jal	b10 <__stack_chk_fail@plt>
+    14a8:	auipc	a3,0x2
+    14ac:	addi	a3,a3,-1552 # 2e98 <__PRETTY_FUNCTION__.3>
+    14b0:	li	a2,310
+    14b4:	auipc	a1,0x1
+    14b8:	addi	a1,a1,1740 # 2b80 <_IO_stdin_used+0x90>
+    14bc:	auipc	a0,0x1
+    14c0:	addi	a0,a0,1764 # 2ba0 <_IO_stdin_used+0xb0>
+    14c4:	jal	b60 <__assert_fail@plt>
+    14c8:	auipc	a3,0x2
+    14cc:	addi	a3,a3,-1584 # 2e98 <__PRETTY_FUNCTION__.3>
+    14d0:	li	a2,305
+    14d4:	auipc	a1,0x1
+    14d8:	addi	a1,a1,1708 # 2b80 <_IO_stdin_used+0x90>
+    14dc:	auipc	a0,0x1
+    14e0:	addi	a0,a0,1716 # 2b90 <_IO_stdin_used+0xa0>
+    14e4:	jal	b60 <__assert_fail@plt>
+
+00000000000014e8 <candidate>:
+    14e8:	csrr	a6,vlenb
+    14ec:	slli	a6,a6,0x3
+    14ee:	li	t1,128
+    14f2:	mv	a2,a3
+    14f4:	mv	a4,a7
+    14f6:	mv	a3,a5
+    14f8:	beq	a6,t1,14fe <candidate+0x16>
+    14fc:	j	1070 <candidate_vl256.isra.0>
+    14fe:	j	12ae <candidate_vl128.isra.0>
+
+0000000000001500 <baseline_vl256.isra.0>:
+    1500:	addi	sp,sp,-48
+    1502:	auipc	t3,0x4
+    1506:	ld	t3,-1322(t3) # 4fd8 <__stack_chk_guard@GLIBC_2.27>
+    150a:	ld	a5,0(t3)
+    150e:	sd	a5,8(sp)
+    1510:	li	a5,0
+    1512:	sd	ra,40(sp)
+    1514:	sd	s0,32(sp)
+    1516:	sd	s1,24(sp)
+    1518:	li	a5,1
+    151a:	vsetivli	zero,16,e8,mf2,ta,ma
+    151e:	bne	a4,a5,1720 <baseline_vl256.isra.0+0x220>
+    1522:	andi	t4,a0,31
+    1526:	bnez	t4,1700 <baseline_vl256.isra.0+0x200>
+    152a:	sraiw	s0,a0,0x1f
+    152e:	srliw	s0,s0,0x1b
+    1532:	addw	s0,s0,a0
+    1534:	sraiw	s1,s0,0x5
+    1538:	auipc	a4,0x2
+    153c:	addi	a4,a4,-1712 # 2e88 <kvalues_iq4nl>
+    1540:	li	a5,63
+    1544:	fmv.w.x	fa5,zero
+    1548:	mv	s0,s1
+    154a:	vle8.v	v26,(a4)
+    154e:	bge	a5,a0,16f4 <baseline_vl256.isra.0+0x1f4>
+    1552:	addi	a4,a2,2
+    1556:	addi	a5,a3,2
+    155a:	li	t6,0
+    155c:	mv	t2,sp
+    155e:	addi	t0,sp,4
+    1562:	auipc	t5,0x4
+    1566:	addi	t5,t5,-1346 # 5020 <ggml_table_f32_f16>
+    156a:	vsetivli	zero,1,e32,m1,ta,ma
+    156e:	vmv.v.i	v27,0
+    1572:	addi	t1,a4,18
+    1576:	vsetivli	zero,16,e8,mf2,ta,ma
+    157a:	addi	a7,a5,16
+    157e:	vle8.v	v24,(t1)
+    1582:	vle8.v	v25,(a4)
+    1586:	vand.vi	v28,v24,15
+    158a:	vand.vi	v30,v25,15
+    158e:	vsrl.vi	v24,v24,4
+    1592:	vsrl.vi	v25,v25,4
+    1596:	addi	a6,a5,34
+    159a:	addi	a0,a5,50
+    159e:	vle8.v	v31,(a7)
+    15a2:	vle8.v	v9,(a6)
+    15a6:	vle8.v	v29,(a0)
+    15aa:	vle8.v	v11,(a5)
+    15ae:	vrgather.vv	v10,v26,v30
+    15b2:	vrgather.vv	v8,v26,v28
+    15b6:	vrgather.vv	v30,v26,v25
+    15ba:	vrgather.vv	v28,v26,v24
+    15be:	vwmul.vv	v25,v11,v10
+    15c2:	vwmul.vv	v24,v9,v8
+    15c6:	vwmacc.vv	v25,v31,v30
+    15ca:	vwmacc.vv	v24,v29,v28
+    15ce:	vsetvli	zero,zero,e16,m1,ta,ma
+    15d2:	vwredsum.vs	v28,v25,v27
+    15d6:	vwredsum.vs	v25,v24,v27
+    15da:	vsetivli	zero,1,e32,m1,ta,ma
+    15de:	vse32.v	v28,(t2)
+    15e2:	vse32.v	v25,(t0)
+    15e6:	lhu	t1,-2(a4)
+    15ea:	lhu	a7,-2(a5)
+    15ee:	lhu	a6,16(a4)
+    15f2:	slli	t1,t1,0x2
+    15f4:	slli	a7,a7,0x2
+    15f6:	add	a7,a7,t5
+    15f8:	add	t1,t1,t5
+    15fa:	flw	fa4,0(a7)
+    15fe:	lhu	a0,32(a5)
+    1602:	flw	fa3,0(t1)
+    1606:	lw	a7,0(sp)
+    1608:	slli	a6,a6,0x2
+    160a:	fmul.s	fa3,fa3,fa4
+    160e:	slli	a0,a0,0x2
+    1610:	add	a0,a0,t5
+    1612:	add	a6,a6,t5
+    1614:	flw	fa2,0(a0)
+    1618:	fcvt.s.w	fa1,a7
+    161c:	flw	fa4,0(a6)
+    1620:	lw	a0,4(sp)
+    1622:	fmadd.s	fa5,fa3,fa1,fa5
+    1626:	fmul.s	fa4,fa4,fa2
+    162a:	fcvt.s.w	fa3,a0
+    162e:	addiw	a0,t6,3
+    1632:	addi	a4,a4,36
+    1636:	addiw	t6,t6,2
+    1638:	fmadd.s	fa5,fa4,fa3,fa5
+    163c:	addi	a5,a5,68
+    1640:	blt	a0,s1,1572 <baseline_vl256.isra.0+0x72>
+    1644:	addiw	s0,s0,-2
+    1646:	andi	s0,s0,-2
+    1648:	addiw	s0,s0,2
+    164a:	bge	s0,s1,16da <baseline_vl256.isra.0+0x1da>
+    164e:	slli	a4,s0,0x4
+    1652:	slli	a5,s0,0x3
+    1656:	add	a4,a4,s0
+    1658:	add	a5,a5,s0
+    165a:	slli	a4,a4,0x1
+    165c:	slli	a5,a5,0x1
+    165e:	add	a3,a3,a4
+    1660:	add	a2,a2,a5
+    1662:	lhu	a0,0(a2)
+    1666:	lhu	a5,0(a3)
+    166a:	auipc	a4,0x4
+    166e:	addi	a4,a4,-1610 # 5020 <ggml_table_f32_f16>
+    1672:	slli	a0,a0,0x2
+    1674:	slli	a5,a5,0x2
+    1676:	add	a5,a5,a4
+    1678:	add	a4,a4,a0
+    167a:	flw	fa4,0(a5)
+    167e:	flw	fa3,0(a4)
+    1682:	addi	a6,a3,2
+    1686:	addi	a2,a2,2
+    1688:	fmul.s	fa4,fa4,fa3
+    168c:	addi	a3,a3,18
+    168e:	li	t1,0
+    1690:	auipc	a7,0x1
+    1694:	addi	a7,a7,2024 # 2e78 <__PRETTY_FUNCTION__.2>
+    1698:	lbu	a5,0(a2)
+    169c:	lb	t6,0(a6)
+    16a0:	lb	t5,16(a6)
+    16a4:	andi	a4,a5,15
+    16a8:	srli	a5,a5,0x4
+    16aa:	add	a5,a5,a7
+    16ac:	add	a4,a4,a7
+    16ae:	lb	a4,16(a4)
+    16b2:	lb	a0,16(a5)
+    16b6:	addi	a6,a6,1
+    16b8:	mulw	a5,a4,t6
+    16bc:	addi	a2,a2,1
+    16be:	mulw	a4,a0,t5
+    16c2:	addw	t4,a5,t4
+    16c6:	addw	t1,a4,t1
+    16ca:	bne	a6,a3,1698 <baseline_vl256.isra.0+0x198>
+    16ce:	addw	a5,t4,t1
+    16d2:	fcvt.s.w	fa3,a5
+    16d6:	fmadd.s	fa5,fa4,fa3,fa5
+    16da:	fsw	fa5,0(a1)
+    16de:	ld	a4,8(sp)
+    16e0:	ld	a5,0(t3)
+    16e4:	xor	a5,a5,a4
+    16e6:	li	a4,0
+    16e8:	bnez	a5,16fc <baseline_vl256.isra.0+0x1fc>
+    16ea:	ld	ra,40(sp)
+    16ec:	ld	s0,32(sp)
+    16ee:	ld	s1,24(sp)
+    16f0:	addi	sp,sp,48
+    16f2:	ret
+    16f4:	li	s0,0
+    16f6:	bge	s0,s1,16da <baseline_vl256.isra.0+0x1da>
+    16fa:	j	164e <baseline_vl256.isra.0+0x14e>
+    16fc:	jal	b10 <__stack_chk_fail@plt>
+    1700:	auipc	a3,0x1
+    1704:	addi	a3,a3,1960 # 2ea8 <__PRETTY_FUNCTION__.4>
+    1708:	li	a2,228
+    170c:	auipc	a1,0x1
+    1710:	addi	a1,a1,1140 # 2b80 <_IO_stdin_used+0x90>
+    1714:	auipc	a0,0x1
+    1718:	addi	a0,a0,1164 # 2ba0 <_IO_stdin_used+0xb0>
+    171c:	jal	b60 <__assert_fail@plt>
+    1720:	auipc	a3,0x1
+    1724:	addi	a3,a3,1928 # 2ea8 <__PRETTY_FUNCTION__.4>
+    1728:	li	a2,223
+    172c:	auipc	a1,0x1
+    1730:	addi	a1,a1,1108 # 2b80 <_IO_stdin_used+0x90>
+    1734:	auipc	a0,0x1
+    1738:	addi	a0,a0,1116 # 2b90 <_IO_stdin_used+0xa0>
+    173c:	jal	b60 <__assert_fail@plt>
+
+0000000000001740 <baseline_vl128.isra.0>:
+    1740:	addi	sp,sp,-48
+    1742:	auipc	t4,0x4
+    1746:	ld	t4,-1898(t4) # 4fd8 <__stack_chk_guard@GLIBC_2.27>
+    174a:	ld	a5,0(t4)
+    174e:	sd	a5,8(sp)
+    1750:	li	a5,0
+    1752:	sd	ra,40(sp)
+    1754:	li	a5,1
+    1756:	vsetivli	zero,16,e8,m2,ta,ma
+    175a:	bne	a4,a5,1960 <baseline_vl128.isra.0+0x220>
+    175e:	andi	t5,a0,31
+    1762:	bnez	t5,193a <baseline_vl128.isra.0+0x1fa>
+    1766:	sd	s1,24(sp)
+    1768:	sraiw	s1,a0,0x1f
+    176c:	srliw	s1,s1,0x1b
+    1770:	addw	s1,s1,a0
+    1772:	sd	s2,16(sp)
+    1774:	auipc	a4,0x1
+    1778:	addi	a4,a4,1812 # 2e88 <kvalues_iq4nl>
+    177c:	sraiw	s2,s1,0x5
+    1780:	li	a5,63
+    1784:	mv	s1,s2
+    1786:	vle8.v	v30,(a4)
+    178a:	bge	a5,a0,1928 <baseline_vl128.isra.0+0x1e8>
+    178e:	fmv.w.x	fa5,zero
+    1792:	sd	s0,32(sp)
+    1794:	addi	a0,a2,2
+    1798:	addi	a4,a3,2
+    179c:	li	t0,0
+    179e:	mv	s0,sp
+    17a0:	addi	t2,sp,4
+    17a4:	auipc	t6,0x4
+    17a8:	addi	t6,t6,-1924 # 5020 <ggml_table_f32_f16>
+    17ac:	li	a5,32
+    17b0:	vsetivli	zero,1,e32,m1,ta,ma
+    17b4:	vmv.v.i	v8,0
+    17b8:	addi	a7,a0,18
+    17bc:	vsetivli	zero,16,e8,m1,ta,ma
+    17c0:	addi	a6,a4,34
+    17c4:	vle8.v	v28,(a7)
+    17c8:	vle8.v	v29,(a0)
+    17cc:	vsetvli	zero,a5,e8,m2,ta,ma
+    17d0:	vle8.v	v12,(a4)
+    17d4:	vle8.v	v20,(a6)
+    17d8:	vsetivli	zero,16,e8,m1,ta,ma
+    17dc:	vand.vi	v24,v28,15
+    17e0:	vsrl.vi	v25,v28,4
+    17e4:	vand.vi	v26,v29,15
+    17e8:	vsrl.vi	v27,v29,4
+    17ec:	vsetvli	zero,a5,e8,m2,ta,ma
+    17f0:	vrgather.vv	v28,v30,v26
+    17f4:	vrgather.vv	v26,v30,v24
+    17f8:	vwmul.vv	v16,v12,v28
+    17fc:	vwmul.vv	v12,v20,v26
+    1800:	vsetvli	zero,zero,e16,m4,ta,ma
+    1804:	vwredsum.vs	v25,v16,v8
+    1808:	vwredsum.vs	v24,v12,v8
+    180c:	vsetivli	zero,1,e32,m1,ta,ma
+    1810:	vse32.v	v25,(s0)
+    1814:	vse32.v	v24,(t2)
+    1818:	lhu	t3,-2(a0)
+    181c:	lhu	t1,-2(a4)
+    1820:	lhu	a7,16(a0)
+    1824:	slli	t3,t3,0x2
+    1826:	slli	t1,t1,0x2
+    1828:	add	t1,t1,t6
+    182a:	add	t3,t3,t6
+    182c:	flw	fa4,0(t1)
+    1830:	lhu	a6,32(a4)
+    1834:	flw	fa3,0(t3)
+    1838:	lw	t1,0(sp)
+    183a:	slli	a7,a7,0x2
+    183c:	fmul.s	fa3,fa3,fa4
+    1840:	slli	a6,a6,0x2
+    1842:	add	a6,a6,t6
+    1844:	add	a7,a7,t6
+    1846:	flw	fa2,0(a6)
+    184a:	fcvt.s.w	fa1,t1
+    184e:	flw	fa4,0(a7)
+    1852:	lw	a6,4(sp)
+    1854:	fmadd.s	fa5,fa3,fa1,fa5
+    1858:	fmul.s	fa4,fa4,fa2
+    185c:	fcvt.s.w	fa3,a6
+    1860:	addiw	a6,t0,3
+    1864:	addi	a0,a0,36
+    1868:	addiw	t0,t0,2
+    186a:	fmadd.s	fa5,fa4,fa3,fa5
+    186e:	addi	a4,a4,68
+    1872:	blt	a6,s2,17b8 <baseline_vl128.isra.0+0x78>
+    1876:	addiw	s1,s1,-2
+    1878:	andi	s1,s1,-2
+    187a:	addiw	s1,s1,2
+    187c:	ld	s0,32(sp)
+    187e:	bge	s1,s2,190e <baseline_vl128.isra.0+0x1ce>
+    1882:	slli	a4,s1,0x4
+    1886:	slli	a5,s1,0x3
+    188a:	add	a4,a4,s1
+    188c:	add	a5,a5,s1
+    188e:	slli	a4,a4,0x1
+    1890:	slli	a5,a5,0x1
+    1892:	add	a3,a3,a4
+    1894:	add	a2,a2,a5
+    1896:	lhu	a0,0(a2)
+    189a:	lhu	a5,0(a3)
+    189e:	auipc	a4,0x3
+    18a2:	addi	a4,a4,1922 # 5020 <ggml_table_f32_f16>
+    18a6:	slli	a0,a0,0x2
+    18a8:	slli	a5,a5,0x2
+    18aa:	add	a5,a5,a4
+    18ac:	add	a4,a4,a0
+    18ae:	flw	fa4,0(a5)
+    18b2:	flw	fa3,0(a4)
+    18b6:	addi	a6,a3,2
+    18ba:	addi	a2,a2,2
+    18bc:	fmul.s	fa4,fa4,fa3
+    18c0:	addi	a3,a3,18
+    18c2:	li	t1,0
+    18c4:	auipc	a7,0x1
+    18c8:	addi	a7,a7,1460 # 2e78 <__PRETTY_FUNCTION__.2>
+    18cc:	lbu	a5,0(a2)
+    18d0:	lb	t6,0(a6)
+    18d4:	lb	t3,16(a6)
+    18d8:	andi	a4,a5,15
+    18dc:	srli	a5,a5,0x4
+    18de:	add	a5,a5,a7
+    18e0:	add	a4,a4,a7
+    18e2:	lb	a4,16(a4)
+    18e6:	lb	a0,16(a5)
+    18ea:	addi	a6,a6,1
+    18ec:	mulw	a5,a4,t6
+    18f0:	addi	a2,a2,1
+    18f2:	mulw	a4,a0,t3
+    18f6:	addw	t5,a5,t5
+    18fa:	addw	t1,a4,t1
+    18fe:	bne	a6,a3,18cc <baseline_vl128.isra.0+0x18c>
+    1902:	addw	a5,t5,t1
+    1906:	fcvt.s.w	fa3,a5
+    190a:	fmadd.s	fa5,fa4,fa3,fa5
+    190e:	fsw	fa5,0(a1)
+    1912:	ld	a4,8(sp)
+    1914:	ld	a5,0(t4)
+    1918:	xor	a5,a5,a4
+    191a:	li	a4,0
+    191c:	bnez	a5,1934 <baseline_vl128.isra.0+0x1f4>
+    191e:	ld	ra,40(sp)
+    1920:	ld	s1,24(sp)
+    1922:	ld	s2,16(sp)
+    1924:	addi	sp,sp,48
+    1926:	ret
+    1928:	li	s1,0
+    192a:	fmv.w.x	fa5,zero
+    192e:	bge	s1,s2,190e <baseline_vl128.isra.0+0x1ce>
+    1932:	j	1882 <baseline_vl128.isra.0+0x142>
+    1934:	sd	s0,32(sp)
+    1936:	jal	b10 <__stack_chk_fail@plt>
+    193a:	auipc	a3,0x1
+    193e:	addi	a3,a3,1406 # 2eb8 <__PRETTY_FUNCTION__.5>
+    1942:	li	a2,163
+    1946:	auipc	a1,0x1
+    194a:	addi	a1,a1,570 # 2b80 <_IO_stdin_used+0x90>
+    194e:	auipc	a0,0x1
+    1952:	addi	a0,a0,594 # 2ba0 <_IO_stdin_used+0xb0>
+    1956:	sd	s0,32(sp)
+    1958:	sd	s1,24(sp)
+    195a:	sd	s2,16(sp)
+    195c:	jal	b60 <__assert_fail@plt>
+    1960:	auipc	a3,0x1
+    1964:	addi	a3,a3,1368 # 2eb8 <__PRETTY_FUNCTION__.5>
+    1968:	li	a2,158
+    196c:	auipc	a1,0x1
+    1970:	addi	a1,a1,532 # 2b80 <_IO_stdin_used+0x90>
+    1974:	auipc	a0,0x1
+    1978:	addi	a0,a0,540 # 2b90 <_IO_stdin_used+0xa0>
+    197c:	sd	s0,32(sp)
+    197e:	sd	s1,24(sp)
+    1980:	sd	s2,16(sp)
+    1982:	jal	b60 <__assert_fail@plt>
+
+0000000000001986 <baseline>:
+    1986:	csrr	a6,vlenb
+    198a:	slli	a6,a6,0x3
+    198c:	li	t1,128
+    1990:	mv	a2,a3
+    1992:	mv	a4,a7
+    1994:	mv	a3,a5
+    1996:	beq	a6,t1,199c <baseline+0x16>
+    199a:	j	1500 <baseline_vl256.isra.0>
+    199c:	j	1740 <baseline_vl128.isra.0>
+
+000000000000199e <original_vl256.isra.0>:
+    199e:	addi	sp,sp,-32
+    19a0:	auipc	t5,0x3
+    19a4:	ld	t5,1592(t5) # 4fd8 <__stack_chk_guard@GLIBC_2.27>
+    19a8:	ld	a5,0(t5)
+    19ac:	sd	a5,8(sp)
+    19ae:	li	a5,0
+    19b0:	sd	ra,24(sp)
+    19b2:	li	a5,1
+    19b4:	vsetivli	zero,16,e8,mf2,ta,ma
+    19b8:	bne	a4,a5,1af2 <original_vl256.isra.0+0x154>
+    19bc:	andi	t1,a0,31
+    19c0:	bnez	t1,1b16 <original_vl256.isra.0+0x178>
+    19c4:	sraiw	t6,a0,0x1f
+    19c8:	srliw	t6,t6,0x1b
+    19cc:	addw	t6,t6,a0
+    19d0:	auipc	a4,0x1
+    19d4:	addi	a4,a4,1208 # 2e88 <kvalues_iq4nl>
+    19d8:	li	a5,63
+    19dc:	fmv.w.x	fa5,zero
+    19e0:	sraiw	t6,t6,0x5
+    19e4:	vle8.v	v26,(a4)
+    19e8:	bge	a5,a0,1adc <original_vl256.isra.0+0x13e>
+    19ec:	addi	a4,a2,2
+    19f0:	addi	a5,a3,2
+    19f4:	mv	t4,sp
+    19f6:	addi	t3,sp,4
+    19fa:	auipc	a7,0x3
+    19fe:	addi	a7,a7,1574 # 5020 <ggml_table_f32_f16>
+    1a02:	vsetivli	zero,1,e32,m1,ta,ma
+    1a06:	vmv.v.i	v27,0
+    1a0a:	addi	a6,a4,18
+    1a0e:	vsetivli	zero,16,e8,mf2,ta,ma
+    1a12:	addi	a0,a5,16
+    1a16:	vle8.v	v24,(a6)
+    1a1a:	vle8.v	v25,(a4)
+    1a1e:	vand.vi	v28,v24,15
+    1a22:	vand.vi	v30,v25,15
+    1a26:	vsrl.vi	v24,v24,4
+    1a2a:	vsrl.vi	v25,v25,4
+    1a2e:	addi	a2,a5,34
+    1a32:	addi	a3,a5,50
+    1a36:	vle8.v	v31,(a0)
+    1a3a:	vle8.v	v9,(a2)
+    1a3e:	vle8.v	v29,(a3)
+    1a42:	vle8.v	v11,(a5)
+    1a46:	vrgather.vv	v10,v26,v30
+    1a4a:	vrgather.vv	v8,v26,v28
+    1a4e:	vrgather.vv	v30,v26,v25
+    1a52:	vrgather.vv	v28,v26,v24
+    1a56:	vwmul.vv	v25,v11,v10
+    1a5a:	vwmul.vv	v24,v9,v8
+    1a5e:	vwmacc.vv	v25,v31,v30
+    1a62:	vwmacc.vv	v24,v29,v28
+    1a66:	vsetvli	zero,zero,e16,m1,ta,ma
+    1a6a:	vwredsum.vs	v28,v25,v27
+    1a6e:	vwredsum.vs	v25,v24,v27
+    1a72:	vsetivli	zero,1,e32,m1,ta,ma
+    1a76:	vse32.v	v28,(t4)
+    1a7a:	vse32.v	v25,(t3)
+    1a7e:	lhu	a6,-2(a4)
+    1a82:	lhu	a0,-2(a5)
+    1a86:	lhu	a2,16(a4)
+    1a8a:	slli	a6,a6,0x2
+    1a8c:	slli	a0,a0,0x2
+    1a8e:	add	a0,a0,a7
+    1a90:	add	a6,a6,a7
+    1a92:	flw	fa4,0(a0)
+    1a96:	lhu	a3,32(a5)
+    1a9a:	flw	fa3,0(a6)
+    1a9e:	lw	a0,0(sp)
+    1aa0:	slli	a2,a2,0x2
+    1aa2:	fmul.s	fa3,fa3,fa4
+    1aa6:	slli	a3,a3,0x2
+    1aa8:	add	a3,a3,a7
+    1aaa:	add	a2,a2,a7
+    1aac:	flw	fa2,0(a3)
+    1ab0:	fcvt.s.w	fa1,a0
+    1ab4:	flw	fa4,0(a2)
+    1ab8:	lw	a3,4(sp)
+    1aba:	fmadd.s	fa5,fa3,fa1,fa5
+    1abe:	fmul.s	fa4,fa4,fa2
+    1ac2:	fcvt.s.w	fa3,a3
+    1ac6:	addiw	a3,t1,3
+    1aca:	addi	a4,a4,36
+    1ace:	addiw	t1,t1,2
+    1ad0:	fmadd.s	fa5,fa4,fa3,fa5
+    1ad4:	addi	a5,a5,68
+    1ad8:	blt	a3,t6,1a0a <original_vl256.isra.0+0x6c>
+    1adc:	fsw	fa5,0(a1)
+    1ae0:	ld	a4,8(sp)
+    1ae2:	ld	a5,0(t5)
+    1ae6:	xor	a5,a5,a4
+    1ae8:	li	a4,0
+    1aea:	bnez	a5,1b12 <original_vl256.isra.0+0x174>
+    1aec:	ld	ra,24(sp)
+    1aee:	addi	sp,sp,32
+    1af0:	ret
+    1af2:	auipc	a3,0x1
+    1af6:	addi	a3,a3,982 # 2ec8 <__PRETTY_FUNCTION__.6>
+    1afa:	li	a2,86
+    1afe:	auipc	a1,0x1
+    1b02:	addi	a1,a1,130 # 2b80 <_IO_stdin_used+0x90>
+    1b06:	auipc	a0,0x1
+    1b0a:	addi	a0,a0,138 # 2b90 <_IO_stdin_used+0xa0>
+    1b0e:	jal	b60 <__assert_fail@plt>
+    1b12:	jal	b10 <__stack_chk_fail@plt>
+    1b16:	auipc	a3,0x1
+    1b1a:	addi	a3,a3,946 # 2ec8 <__PRETTY_FUNCTION__.6>
+    1b1e:	li	a2,91
+    1b22:	auipc	a1,0x1
+    1b26:	addi	a1,a1,94 # 2b80 <_IO_stdin_used+0x90>
+    1b2a:	auipc	a0,0x1
+    1b2e:	addi	a0,a0,118 # 2ba0 <_IO_stdin_used+0xb0>
+    1b32:	jal	b60 <__assert_fail@plt>
+
+0000000000001b36 <original_vl128.isra.0>:
+    1b36:	addi	sp,sp,-32
+    1b38:	auipc	t6,0x3
+    1b3c:	ld	t6,1184(t6) # 4fd8 <__stack_chk_guard@GLIBC_2.27>
+    1b40:	ld	a5,0(t6)
+    1b44:	sd	a5,8(sp)
+    1b46:	li	a5,0
+    1b48:	sd	ra,24(sp)
+    1b4a:	li	a5,1
+    1b4c:	vsetivli	zero,16,e8,m2,ta,ma
+    1b50:	bne	a4,a5,1c78 <original_vl128.isra.0+0x142>
+    1b54:	andi	t3,a0,31
+    1b58:	bnez	t3,1c9a <original_vl128.isra.0+0x164>
+    1b5c:	sraiw	t0,a0,0x1f
+    1b60:	srliw	t0,t0,0x1b
+    1b64:	addw	t0,t0,a0
+    1b68:	auipc	a4,0x1
+    1b6c:	addi	a4,a4,800 # 2e88 <kvalues_iq4nl>
+    1b70:	li	a5,63
+    1b74:	fmv.w.x	fa5,zero
+    1b78:	sraiw	t0,t0,0x5
+    1b7c:	vle8.v	v30,(a4)
+    1b80:	bge	a5,a0,1c62 <original_vl128.isra.0+0x12c>
+    1b84:	addi	a2,a2,2
+    1b86:	addi	a4,a3,2
+    1b8a:	mv	t5,sp
+    1b8c:	addi	t4,sp,4
+    1b90:	auipc	t1,0x3
+    1b94:	addi	t1,t1,1168 # 5020 <ggml_table_f32_f16>
+    1b98:	li	a5,32
+    1b9c:	vsetivli	zero,1,e32,m1,ta,ma
+    1ba0:	vmv.v.i	v8,0
+    1ba4:	addi	a0,a2,18
+    1ba8:	vsetivli	zero,16,e8,m1,ta,ma
+    1bac:	addi	a3,a4,34
+    1bb0:	vle8.v	v28,(a0)
+    1bb4:	vle8.v	v29,(a2)
+    1bb8:	vsetvli	zero,a5,e8,m2,ta,ma
+    1bbc:	vle8.v	v12,(a4)
+    1bc0:	vle8.v	v20,(a3)
+    1bc4:	vsetivli	zero,16,e8,m1,ta,ma
+    1bc8:	vand.vi	v24,v28,15
+    1bcc:	vsrl.vi	v25,v28,4
+    1bd0:	vand.vi	v26,v29,15
+    1bd4:	vsrl.vi	v27,v29,4
+    1bd8:	vsetvli	zero,a5,e8,m2,ta,ma
+    1bdc:	vrgather.vv	v28,v30,v26
+    1be0:	vrgather.vv	v26,v30,v24
+    1be4:	vwmul.vv	v16,v12,v28
+    1be8:	vwmul.vv	v12,v20,v26
+    1bec:	vsetvli	zero,zero,e16,m4,ta,ma
+    1bf0:	vwredsum.vs	v25,v16,v8
+    1bf4:	vwredsum.vs	v24,v12,v8
+    1bf8:	vsetivli	zero,1,e32,m1,ta,ma
+    1bfc:	vse32.v	v25,(t5)
+    1c00:	vse32.v	v24,(t4)
+    1c04:	lhu	a7,-2(a2)
+    1c08:	lhu	a6,-2(a4)
+    1c0c:	lhu	a0,16(a2)
+    1c10:	slli	a7,a7,0x2
+    1c12:	slli	a6,a6,0x2
+    1c14:	add	a6,a6,t1
+    1c16:	add	a7,a7,t1
+    1c18:	flw	fa4,0(a6)
+    1c1c:	lhu	a3,32(a4)
+    1c20:	flw	fa3,0(a7)
+    1c24:	lw	a6,0(sp)
+    1c26:	slli	a0,a0,0x2
+    1c28:	fmul.s	fa3,fa3,fa4
+    1c2c:	slli	a3,a3,0x2
+    1c2e:	add	a3,a3,t1
+    1c30:	add	a0,a0,t1
+    1c32:	flw	fa2,0(a3)
+    1c36:	fcvt.s.w	fa1,a6
+    1c3a:	flw	fa4,0(a0)
+    1c3e:	lw	a3,4(sp)
+    1c40:	fmadd.s	fa5,fa3,fa1,fa5
+    1c44:	fmul.s	fa4,fa4,fa2
+    1c48:	fcvt.s.w	fa3,a3
+    1c4c:	addiw	a3,t3,3
+    1c50:	addi	a2,a2,36
+    1c54:	addiw	t3,t3,2
+    1c56:	fmadd.s	fa5,fa4,fa3,fa5
+    1c5a:	addi	a4,a4,68
+    1c5e:	blt	a3,t0,1ba4 <original_vl128.isra.0+0x6e>
+    1c62:	fsw	fa5,0(a1)
+    1c66:	ld	a4,8(sp)
+    1c68:	ld	a5,0(t6)
+    1c6c:	xor	a5,a5,a4
+    1c6e:	li	a4,0
+    1c70:	bnez	a5,1c96 <original_vl128.isra.0+0x160>
+    1c72:	ld	ra,24(sp)
+    1c74:	addi	sp,sp,32
+    1c76:	ret
+    1c78:	auipc	a3,0x1
+    1c7c:	addi	a3,a3,608 # 2ed8 <__PRETTY_FUNCTION__.7>
+    1c80:	li	a2,31
+    1c82:	auipc	a1,0x1
+    1c86:	addi	a1,a1,-258 # 2b80 <_IO_stdin_used+0x90>
+    1c8a:	auipc	a0,0x1
+    1c8e:	addi	a0,a0,-250 # 2b90 <_IO_stdin_used+0xa0>
+    1c92:	jal	b60 <__assert_fail@plt>
+    1c96:	jal	b10 <__stack_chk_fail@plt>
+    1c9a:	auipc	a3,0x1
+    1c9e:	addi	a3,a3,574 # 2ed8 <__PRETTY_FUNCTION__.7>
+    1ca2:	li	a2,36
+    1ca6:	auipc	a1,0x1
+    1caa:	addi	a1,a1,-294 # 2b80 <_IO_stdin_used+0x90>
+    1cae:	auipc	a0,0x1
+    1cb2:	addi	a0,a0,-270 # 2ba0 <_IO_stdin_used+0xb0>
+    1cb6:	jal	b60 <__assert_fail@plt>
+
+0000000000001cba <original>:
+    1cba:	csrr	a6,vlenb
+    1cbe:	slli	a6,a6,0x3
+    1cc0:	li	t1,128
+    1cc4:	mv	a2,a3
+    1cc6:	mv	a4,a7
+    1cc8:	mv	a3,a5
+    1cca:	beq	a6,t1,1cd0 <original+0x16>
+    1cce:	j	199e <original_vl256.isra.0>
+    1cd0:	j	1b36 <original_vl128.isra.0>
+
+0000000000001cd2 <independent_reference>:
+    1cd2:	blez	a2,1e20 <independent_reference+0x14e>
+    1cd6:	slli	t6,a2,0x4
+    1cda:	add	t6,t6,a2
+    1cdc:	fmv.d.x	fa0,zero
+    1ce0:	addi	t3,a1,2
+    1ce4:	slli	t6,t6,0x1
+    1ce6:	mv	a1,a0
+    1ce8:	add	t6,t6,t3
+    1cea:	auipc	a6,0x1
+    1cee:	addi	a6,a6,398 # 2e78 <__PRETTY_FUNCTION__.2>
+    1cf2:	li	a0,15
+    1cf4:	li	t1,32
+    1cf8:	lui	t5,0x80000
+    1cfc:	lui	t4,0x8000
+    1d00:	lui	t2,0x70000
+    1d04:	auipc	a5,0x1
+    1d08:	flw	fa1,-520(a5) # 2afc <_IO_stdin_used+0xc>
+    1d0c:	lui	t0,0x3f000
+    1d10:	auipc	a5,0x1
+    1d14:	flw	fa2,-536(a5) # 2af8 <_IO_stdin_used+0x8>
+    1d18:	mv	a3,t3
+    1d1a:	li	a4,0
+    1d1c:	li	a2,0
+    1d1e:	andi	a5,a4,15
+    1d22:	add	a5,a5,a1
+    1d24:	lbu	a5,2(a5)
+    1d28:	lb	a7,0(a3)
+    1d2c:	blt	a0,a4,1d54 <independent_reference+0x82>
+    1d30:	andi	a5,a5,15
+    1d32:	slli	a5,a5,0x2
+    1d34:	add	a5,a5,a6
+    1d36:	lw	a5,112(a5)
+    1d38:	addiw	a4,a4,1
+    1d3a:	addi	a3,a3,1
+    1d3c:	mul	a5,a5,a7
+    1d40:	lb	a7,0(a3)
+    1d44:	add	a2,a2,a5
+    1d46:	andi	a5,a4,15
+    1d4a:	add	a5,a5,a1
+    1d4c:	lbu	a5,2(a5)
+    1d50:	bge	a0,a4,1d30 <independent_reference+0x5e>
+    1d54:	srli	a5,a5,0x4
+    1d56:	slli	a5,a5,0x2
+    1d58:	add	a5,a5,a6
+    1d5a:	lw	a5,112(a5)
+    1d5c:	addiw	a4,a4,1
+    1d5e:	addi	a3,a3,1
+    1d60:	mul	a5,a5,a7
+    1d64:	add	a2,a2,a5
+    1d66:	bne	a4,t1,1d1e <independent_reference+0x4c>
+    1d6a:	lhu	a5,0(a1)
+    1d6e:	slliw	a4,a5,0x10
+    1d72:	and	a4,a4,t5
+    1d76:	slliw	a7,a5,0x11
+    1d7a:	sext.w	a3,a4
+    1d7e:	bgeu	a7,t4,1e08 <independent_reference+0x136>
+    1d82:	srliw	a4,a7,0x11
+    1d86:	or	a4,a4,t0
+    1d8a:	fmv.w.x	fa5,a4
+    1d8e:	fsub.s	fa5,fa5,fa2
+    1d92:	fmv.x.w	a4,fa5
+    1d96:	sext.w	a4,a4
+    1d98:	lhu	a5,-2(t3)
+    1d9c:	or	a4,a4,a3
+    1d9e:	fmv.w.x	fa5,a4
+    1da2:	slliw	a4,a5,0x10
+    1da6:	and	a4,a4,t5
+    1daa:	slliw	a3,a5,0x11
+    1dae:	fcvt.d.s	fa4,fa5
+    1db2:	sext.w	a4,a4
+    1db4:	bgeu	a3,t4,1df0 <independent_reference+0x11e>
+    1db8:	srliw	a5,a3,0x11
+    1dbc:	or	a5,a5,t0
+    1dc0:	fmv.w.x	fa5,a5
+    1dc4:	fsub.s	fa5,fa5,fa2
+    1dc8:	fmv.x.w	a5,fa5
+    1dcc:	sext.w	a5,a5
+    1dce:	or	a5,a5,a4
+    1dd0:	fmv.w.x	fa5,a5
+    1dd4:	fcvt.d.l	fa3,a2
+    1dd8:	addi	t3,t3,34
+    1ddc:	fcvt.d.s	fa5,fa5
+    1de0:	addi	a1,a1,18
+    1de2:	fmul.d	fa5,fa5,fa4
+    1de6:	fmadd.d	fa0,fa5,fa3,fa0
+    1dea:	bne	t6,t3,1d18 <independent_reference+0x46>
+    1dee:	ret
+    1df0:	srliw	a5,a3,0x4
+    1df4:	addw	a5,a5,t2
+    1df8:	fmv.w.x	fa5,a5
+    1dfc:	fmul.s	fa5,fa1,fa5
+    1e00:	fmv.x.w	a5,fa5
+    1e04:	sext.w	a5,a5
+    1e06:	j	1dce <independent_reference+0xfc>
+    1e08:	srliw	a4,a7,0x4
+    1e0c:	addw	a4,a4,t2
+    1e10:	fmv.w.x	fa5,a4
+    1e14:	fmul.s	fa5,fa5,fa1
+    1e18:	fmv.x.w	a4,fa5
+    1e1c:	sext.w	a4,a4
+    1e1e:	j	1d98 <independent_reference+0xc6>
+    1e20:	fmv.d.x	fa0,zero
+    1e24:	ret
+
+0000000000001e26 <fill>:
+    1e26:	addi	sp,sp,-176
+    1e28:	auipc	a4,0x3
+    1e2c:	ld	a4,432(a4) # 4fd8 <__stack_chk_guard@GLIBC_2.27>
+    1e30:	sd	ra,168(sp)
+    1e32:	ld	a5,0(a4)
+    1e34:	sd	a5,56(sp)
+    1e36:	li	a5,0
+    1e38:	blez	a2,2098 <fill+0x272>
+    1e3c:	sd	s11,72(sp)
+    1e3e:	auipc	s11,0x3
+    1e42:	addi	s11,s11,458 # 5008 <state>
+    1e46:	li	t3,1
+    1e48:	lw	a5,0(s11)
+    1e4c:	sd	s0,160(sp)
+    1e4e:	sd	s4,128(sp)
+    1e50:	sd	s5,120(sp)
+    1e52:	mv	s4,a2
+    1e54:	sd	s6,112(sp)
+    1e56:	lui	s0,0x8
+    1e58:	lui	s6,0x8
+    1e5a:	li	a7,-1
+    1e5c:	slli	t3,t3,0x27
+    1e5e:	lui	s5,0x1
+    1e60:	sd	s1,152(sp)
+    1e62:	sd	s2,144(sp)
+    1e64:	sd	s3,136(sp)
+    1e66:	sd	s7,104(sp)
+    1e68:	sd	s8,96(sp)
+    1e6a:	sd	s9,88(sp)
+    1e6c:	sd	s10,80(sp)
+    1e6e:	addi	t2,a1,2
+    1e72:	addi	a6,a0,18
+    1e76:	li	a2,0
+    1e78:	auipc	s3,0x1
+    1e7c:	mv	s3,s3
+    1e80:	lui	s2,0x8
+    1e82:	lui	s1,0xff000
+    1e86:	addi	s0,s0,-512 # 7e00 <__global_pointer$+0x25f4>
+    1e8a:	auipc	a4,0x1
+    1e8e:	flw	fa3,-906(a4) # 2b00 <_IO_stdin_used+0x10>
+    1e92:	lui	s9,0xff000
+    1e96:	lui	s8,0x71000
+    1e9a:	lui	s7,0x7800
+    1e9e:	auipc	a4,0x1
+    1ea2:	flw	fa4,-922(a4) # 2b04 <_IO_stdin_used+0x14>
+    1ea6:	addi	s6,s6,-1024 # 7c00 <__global_pointer$+0x23f4>
+    1eaa:	addi	s5,s5,-1 # fff <invoke+0x37>
+    1eac:	zext.b	t0,a3
+    1eb0:	li	s10,7
+    1eb2:	li	t5,1
+    1eb4:	addi	t3,t3,-128
+    1eb8:	srli	t4,a7,0x20
+    1ebc:	mv	t1,s4
+    1ebe:	slliw	a4,a5,0xd
+    1ec2:	xor	a5,a5,a4
+    1ec4:	srliw	a4,a5,0x11
+    1ec8:	xor	a5,a5,a4
+    1eca:	slliw	a4,a5,0x5
+    1ece:	xor	a5,a5,a4
+    1ed0:	andi	a4,a5,7
+    1ed4:	slli	a4,a4,0x2
+    1ed6:	add	a4,a4,s3
+    1ed8:	lw	t6,176(a4)
+    1edc:	sext.w	a5,a5
+    1ede:	mv	a1,s0
+    1ee0:	srliw	a4,t6,0x10
+    1ee4:	slliw	a0,t6,0x1
+    1ee8:	and	a4,a4,s2
+    1eec:	slli	a4,a4,0x30
+    1eee:	sext.w	s4,a0
+    1ef2:	srli	a4,a4,0x30
+    1ef4:	bltu	s1,s4,1f3a <fill+0x114>
+    1ef8:	fmv.w.x	fa5,t6
+    1efc:	and	a0,a0,s9
+    1f00:	sext.w	a1,a0
+    1f04:	fabs.s	fa5,fa5
+    1f08:	fmul.s	fa5,fa5,fa3
+    1f0c:	bgeu	a1,s8,1f14 <fill+0xee>
+    1f10:	lui	a0,0x71000
+    1f14:	srliw	a0,a0,0x1
+    1f18:	addw	a1,a0,s7
+    1f1c:	fmv.w.x	fa2,a1
+    1f20:	fmadd.s	fa5,fa5,fa4,fa2
+    1f24:	fmv.x.w	a1,fa5
+    1f28:	srliw	a0,a1,0xd
+    1f2c:	and	a0,a0,s6
+    1f30:	and	a1,s5,a1
+    1f34:	addw	a1,a1,a0
+    1f36:	slli	a1,a1,0x30
+    1f38:	srli	a1,a1,0x30
+    1f3a:	slliw	a0,a5,0xd
+    1f3e:	xor	a5,a5,a0
+    1f40:	srliw	a0,a5,0x11
+    1f44:	xor	a5,a5,a0
+    1f46:	slliw	a0,a5,0x5
+    1f4a:	xor	a5,a5,a0
+    1f4c:	andi	a0,a5,7
+    1f50:	slli	a0,a0,0x2
+    1f52:	add	a0,a0,s3
+    1f54:	lw	a0,176(a0) # 710000b0 <__BSS_END__+0x70fbb090>
+    1f58:	or	a4,a4,a1
+    1f5a:	sh	a4,-18(a6)
+    1f5e:	srliw	a4,a0,0x10
+    1f62:	slliw	a1,a0,0x1
+    1f66:	and	a4,a4,s2
+    1f6a:	slli	a4,a4,0x30
+    1f6c:	sext.w	t6,a1
+    1f70:	sext.w	a5,a5
+    1f72:	srli	a4,a4,0x30
+    1f74:	mv	s4,s0
+    1f76:	bltu	s1,t6,1fc0 <fill+0x19a>
+    1f7a:	fmv.w.x	fa5,a0
+    1f7e:	and	a1,a1,s9
+    1f82:	sext.w	a0,a1
+    1f86:	fabs.s	fa5,fa5
+    1f8a:	fmul.s	fa5,fa5,fa3
+    1f8e:	bgeu	a0,s8,1f96 <fill+0x170>
+    1f92:	lui	a1,0x71000
+    1f96:	srliw	a1,a1,0x1
+    1f9a:	addw	a1,a1,s7
+    1f9e:	fmv.w.x	fa2,a1
+    1fa2:	fmadd.s	fa5,fa5,fa4,fa2
+    1fa6:	fmv.x.w	a1,fa5
+    1faa:	srliw	a0,a1,0xd
+    1fae:	and	a0,a0,s6
+    1fb2:	and	s4,s5,a1
+    1fb6:	addw	s4,s4,a0
+    1fba:	slli	s4,s4,0x30
+    1fbc:	srli	s4,s4,0x30
+    1fc0:	or	a4,a4,s4
+    1fc4:	sh	a4,-2(t2) # 6ffffffe <__BSS_END__+0x6ffbafde>
+    1fc8:	addi	a1,a6,-16
+    1fcc:	mv	a4,t0
+    1fce:	bne	a3,a7,1fec <fill+0x1c6>
+    1fd2:	slliw	a4,a5,0xd
+    1fd6:	xor	a5,a5,a4
+    1fd8:	srliw	a4,a5,0x11
+    1fdc:	xor	a5,a5,a4
+    1fde:	slliw	a4,a5,0x5
+    1fe2:	xor	a4,a4,a5
+    1fe4:	sext.w	a5,a4
+    1fe8:	zext.b	a4,a4
+    1fec:	sb	a4,0(a1) # 71000000 <__BSS_END__+0x70fbafe0>
+    1ff0:	addi	a1,a1,1
+    1ff2:	bne	a6,a1,1fcc <fill+0x1a6>
+    1ff6:	remw	s4,a2,s10
+    1ffa:	mv	a0,t2
+    1ffc:	li	a4,0
+    1ffe:	li	t6,32
+    2002:	sd	a2,8(sp)
+    2004:	slli	s4,s4,0x2
+    2006:	addi	a1,s4,48
+    200a:	addi	s4,sp,16
+    200e:	add	s4,s4,a1
+    2010:	j	2022 <fill+0x1fc>
+    2012:	lb	a2,-40(s4)
+    2016:	addiw	a4,a4,1
+    2018:	addi	a0,a0,1
+    201a:	sb	a2,-1(a0)
+    201e:	beq	a4,t6,206e <fill+0x248>
+    2022:	addiw	a2,a4,-16
+    2026:	sw	a2,44(sp)
+    2028:	sd	t3,24(sp)
+    202a:	sd	t4,32(sp)
+    202c:	sw	t5,40(sp)
+    202e:	andi	a2,a4,1
+    2032:	li	a1,-128
+    2036:	beqz	a2,203c <fill+0x216>
+    2038:	li	a1,127
+    203c:	sw	a1,48(sp)
+    203e:	bne	a3,a7,2012 <fill+0x1ec>
+    2042:	slliw	a2,a5,0xd
+    2046:	xor	a5,a5,a2
+    2048:	srliw	a2,a5,0x11
+    204c:	xor	a5,a5,a2
+    204e:	slliw	a2,a5,0x5
+    2052:	xor	a5,a5,a2
+    2054:	addiw	a2,a5,-128
+    2058:	slliw	a2,a2,0x18
+    205c:	sraiw	a2,a2,0x18
+    2060:	sb	a2,0(a0)
+    2064:	addiw	a4,a4,1
+    2066:	sext.w	a5,a5
+    2068:	addi	a0,a0,1
+    206a:	bne	a4,t6,2022 <fill+0x1fc>
+    206e:	ld	a2,8(sp)
+    2070:	addi	t2,t2,34
+    2074:	addi	a6,a6,18
+    2076:	addiw	a2,a2,1
+    2078:	bne	t1,a2,1ebe <fill+0x98>
+    207c:	sw	a5,0(s11)
+    2080:	ld	s0,160(sp)
+    2082:	ld	s1,152(sp)
+    2084:	ld	s2,144(sp)
+    2086:	ld	s3,136(sp)
+    2088:	ld	s4,128(sp)
+    208a:	ld	s5,120(sp)
+    208c:	ld	s6,112(sp)
+    208e:	ld	s7,104(sp)
+    2090:	ld	s8,96(sp)
+    2092:	ld	s9,88(sp)
+    2094:	ld	s10,80(sp)
+    2096:	ld	s11,72(sp)
+    2098:	auipc	a5,0x3
+    209c:	ld	a5,-192(a5) # 4fd8 <__stack_chk_guard@GLIBC_2.27>
+    20a0:	ld	a4,56(sp)
+    20a2:	ld	a5,0(a5)
+    20a4:	xor	a5,a5,a4
+    20a6:	li	a4,0
+    20a8:	bnez	a5,20b0 <fill+0x28a>
+    20aa:	ld	ra,168(sp)
+    20ac:	addi	sp,sp,176
+    20ae:	ret
+    20b0:	sd	s0,160(sp)
+    20b2:	sd	s1,152(sp)
+    20b4:	sd	s2,144(sp)
+    20b6:	sd	s3,136(sp)
+    20b8:	sd	s4,128(sp)
+    20ba:	sd	s5,120(sp)
+    20bc:	sd	s6,112(sp)
+    20be:	sd	s7,104(sp)
+    20c0:	sd	s8,96(sp)
+    20c2:	sd	s9,88(sp)
+    20c4:	sd	s10,80(sp)
+    20c6:	sd	s11,72(sp)
+    20c8:	jal	b10 <__stack_chk_fail@plt>
+
+00000000000020cc <timed>:
+    20cc:	addi	sp,sp,-144
+    20ce:	fmv.w.x	fa5,zero
+    20d2:	sd	s7,72(sp)
+    20d4:	auipc	s7,0x3
+    20d8:	ld	s7,-252(s7) # 4fd8 <__stack_chk_guard@GLIBC_2.27>
+    20dc:	sd	s3,104(sp)
+    20de:	sd	s4,96(sp)
+    20e0:	mv	s3,a0
+    20e2:	mv	s4,a1
+    20e4:	li	a0,1
+    20e6:	addi	a1,sp,8
+    20e8:	ld	a5,0(s7)
+    20ec:	sd	a5,40(sp)
+    20ee:	li	a5,0
+    20f0:	sd	s1,120(sp)
+    20f2:	sd	s2,112(sp)
+    20f4:	sd	s5,88(sp)
+    20f6:	sd	ra,136(sp)
+    20f8:	mv	s5,a2
+    20fa:	mv	s1,a3
+    20fc:	mv	s2,a4
+    20fe:	fsw	fa5,4(sp)
+    2102:	jal	b40 <clock_gettime@plt>
+    2106:	sd	s6,80(sp)
+    2108:	sd	s8,64(sp)
+    210a:	bnez	a0,21ae <timed+0xe2>
+    210c:	ld	s6,8(sp)
+    210e:	lui	a5,0x3b9ad
+    2112:	addi	a5,a5,-1536 # 3b9aca00 <__BSS_END__+0x3b9679e0>
+    2116:	mul	s6,s6,a5
+    211a:	ld	s8,16(sp)
+    211c:	blez	s2,215e <timed+0x92>
+    2120:	sd	s0,128(sp)
+    2122:	sd	s9,56(sp)
+    2124:	sd	s10,48(sp)
+    2126:	mv	s0,a0
+    2128:	slliw	s1,s1,0x5
+    212c:	addi	s10,sp,4
+    2130:	auipc	s9,0x3
+    2134:	addi	s9,s9,-280 # 5018 <case_number>
+    2138:	li	a7,1
+    213a:	li	a6,0
+    213c:	mv	a5,s5
+    213e:	li	a4,0
+    2140:	mv	a3,s4
+    2142:	li	a2,0
+    2144:	mv	a1,s10
+    2146:	mv	a0,s1
+    2148:	jalr	s3
+    214a:	flw	fa5,4(sp)
+    214e:	addiw	s0,s0,1
+    2150:	fsw	fa5,4(s9)
+    2154:	bne	s2,s0,2138 <timed+0x6c>
+    2158:	ld	s0,128(sp)
+    215a:	ld	s9,56(sp)
+    215c:	ld	s10,48(sp)
+    215e:	addi	a1,sp,24
+    2160:	li	a0,1
+    2162:	jal	b40 <clock_gettime@plt>
+    2166:	bnez	a0,21ae <timed+0xe2>
+    2168:	ld	a0,24(sp)
+    216a:	lui	a5,0x3b9ad
+    216e:	addi	a5,a5,-1536 # 3b9aca00 <__BSS_END__+0x3b9679e0>
+    2172:	mul	a0,a0,a5
+    2176:	ld	a4,40(sp)
+    2178:	ld	a5,0(s7)
+    217c:	xor	a5,a5,a4
+    217e:	li	a4,0
+    2180:	ld	a4,32(sp)
+    2182:	sub	a0,a0,s8
+    2186:	add	a0,a0,a4
+    2188:	sub	a0,a0,s6
+    218c:	bnez	a5,21a4 <timed+0xd8>
+    218e:	ld	ra,136(sp)
+    2190:	ld	s6,80(sp)
+    2192:	ld	s8,64(sp)
+    2194:	ld	s1,120(sp)
+    2196:	ld	s2,112(sp)
+    2198:	ld	s3,104(sp)
+    219a:	ld	s4,96(sp)
+    219c:	ld	s5,88(sp)
+    219e:	ld	s7,72(sp)
+    21a0:	addi	sp,sp,144
+    21a2:	ret
+    21a4:	sd	s0,128(sp)
+    21a6:	sd	s9,56(sp)
+    21a8:	sd	s10,48(sp)
+    21aa:	jal	b10 <__stack_chk_fail@plt>
+    21ae:	auipc	a0,0x1
+    21b2:	addi	a0,a0,-1534 # 2bb0 <_IO_stdin_used+0xc0>
+    21b6:	sd	s0,128(sp)
+    21b8:	sd	s9,56(sp)
+    21ba:	sd	s10,48(sp)
+    21bc:	jal	b80 <perror@plt>
+    21c0:	li	a0,1
+    21c2:	jal	b90 <exit@plt>
+
+00000000000021c6 <ggml_vec_dot_iq4_nl_q8_0_generic>:
+    21c6:	addi	sp,sp,-16
+    21c8:	sd	ra,8(sp)
+    21ca:	sd	s0,0(sp)
+    21cc:	li	a4,1
+    21ce:	bne	a7,a4,228c <ggml_vec_dot_iq4_nl_q8_0_generic+0xc6>
+    21d2:	andi	a4,a0,31
+    21d6:	bnez	a4,22aa <ggml_vec_dot_iq4_nl_q8_0_generic+0xe4>
+    21d8:	mv	s0,a1
+    21da:	sraiw	a1,a0,0x1f
+    21de:	srliw	a1,a1,0x1b
+    21e2:	addw	a1,a1,a0
+    21e4:	li	a4,31
+    21e6:	fmv.w.x	fa4,zero
+    21ea:	sraiw	a1,a1,0x5
+    21ee:	bge	a4,a0,2280 <ggml_vec_dot_iq4_nl_q8_0_generic+0xba>
+    21f2:	addi	t6,a3,2
+    21f6:	addi	t5,a5,18
+    21fa:	li	t0,0
+    21fc:	auipc	t2,0x3
+    2200:	addi	t2,t2,-476 # 5020 <ggml_table_f32_f16>
+    2204:	auipc	t1,0x1
+    2208:	addi	t1,t1,-908 # 2e78 <__PRETTY_FUNCTION__.2>
+    220c:	lhu	a4,-2(t6)
+    2210:	lhu	a5,-18(t5) # ffffffff7fffffee <__BSS_END__+0xffffffff7ffbafce>
+    2214:	addi	a2,t5,-16
+    2218:	slli	a4,a4,0x2
+    221a:	slli	a5,a5,0x2
+    221c:	add	a4,a4,t2
+    221e:	add	a5,a5,t2
+    2220:	flw	fa5,0(a4)
+    2224:	flw	fa3,0(a5)
+    2228:	mv	a0,t6
+    222a:	li	a7,0
+    222c:	fmul.s	fa5,fa5,fa3
+    2230:	li	a6,0
+    2232:	lbu	a5,0(a0)
+    2236:	lb	t4,0(a2)
+    223a:	lb	t3,16(a2)
+    223e:	andi	a4,a5,15
+    2242:	srli	a5,a5,0x4
+    2244:	add	a5,a5,t1
+    2246:	add	a4,a4,t1
+    2248:	lb	a4,16(a4)
+    224c:	lb	a3,16(a5)
+    2250:	addi	a2,a2,1
+    2252:	mulw	a5,a4,t4
+    2256:	addi	a0,a0,1
+    2258:	mulw	a4,a3,t3
+    225c:	addw	a6,a5,a6
+    2260:	addw	a7,a4,a7
+    2264:	bne	a2,t5,2232 <ggml_vec_dot_iq4_nl_q8_0_generic+0x6c>
+    2268:	addw	a5,a6,a7
+    226c:	fcvt.s.w	fa3,a5
+    2270:	addiw	t0,t0,1 # 3f000001 <__BSS_END__+0x3efbafe1>
+    2272:	addi	t6,t6,18
+    2274:	fmadd.s	fa4,fa3,fa5,fa4
+    2278:	addi	t5,t5,34
+    227c:	blt	t0,a1,220c <ggml_vec_dot_iq4_nl_q8_0_generic+0x46>
+    2280:	ld	ra,8(sp)
+    2282:	fsw	fa4,0(s0)
+    2286:	ld	s0,0(sp)
+    2288:	addi	sp,sp,16
+    228a:	ret
+    228c:	auipc	a3,0x1
+    2290:	addi	a3,a3,-836 # 2f48 <__PRETTY_FUNCTION__.8>
+    2294:	li	a2,2
+    2296:	auipc	a1,0x1
+    229a:	addi	a1,a1,-1814 # 2b80 <_IO_stdin_used+0x90>
+    229e:	auipc	a0,0x1
+    22a2:	addi	a0,a0,-1806 # 2b90 <_IO_stdin_used+0xa0>
+    22a6:	jal	b60 <__assert_fail@plt>
+    22aa:	auipc	a3,0x1
+    22ae:	addi	a3,a3,-866 # 2f48 <__PRETTY_FUNCTION__.8>
+    22b2:	li	a2,7
+    22b4:	auipc	a1,0x1
+    22b8:	addi	a1,a1,-1844 # 2b80 <_IO_stdin_used+0x90>
+    22bc:	auipc	a0,0x1
+    22c0:	addi	a0,a0,-1820 # 2ba0 <_IO_stdin_used+0xb0>
+    22c4:	jal	b60 <__assert_fail@plt>
+
+00000000000022c8 <check>:
+    22c8:	addi	sp,sp,-176
+    22ca:	sd	s4,128(sp)
+    22cc:	sd	s8,96(sp)
+    22ce:	mv	s4,a0
+    22d0:	auipc	s8,0x3
+    22d4:	ld	s8,-760(s8) # 4fd8 <__stack_chk_guard@GLIBC_2.27>
+    22d8:	mv	a5,a1
+    22da:	li	a7,1
+    22dc:	li	a6,0
+    22de:	li	a4,0
+    22e0:	ld	t1,0(s8)
+    22e4:	sd	t1,56(sp)
+    22e6:	li	t1,0
+    22e8:	slliw	a0,a2,0x5
+    22ec:	sd	s3,136(sp)
+    22ee:	sd	s5,120(sp)
+    22f0:	mv	s3,a2
+    22f2:	mv	s5,a1
+    22f4:	mv	a3,s4
+    22f6:	li	a2,0
+    22f8:	addi	a1,sp,44
+    22fa:	sd	ra,168(sp)
+    22fc:	sd	s6,112(sp)
+    22fe:	sd	s7,104(sp)
+    2300:	fsd	fs1,80(sp)
+    2302:	fsd	fs2,72(sp)
+    2304:	fsd	fs0,88(sp)
+    2306:	jal	21c6 <ggml_vec_dot_iq4_nl_q8_0_generic>
+    230a:	mv	a3,s3
+    230c:	mv	a2,s5
+    230e:	mv	a1,s4
+    2310:	auipc	a0,0xfffff
+    2314:	addi	a0,a0,1654 # 1986 <baseline>
+    2318:	flw	fs1,44(sp)
+    231c:	jal	fc8 <invoke>
+    2320:	mv	a3,s3
+    2322:	mv	a2,s5
+    2324:	mv	a1,s4
+    2326:	auipc	a0,0xfffff
+    232a:	addi	a0,a0,450 # 14e8 <candidate>
+    232e:	fmv.x.w	s6,fa0
+    2332:	jal	fc8 <invoke>
+    2336:	mv	a2,s3
+    2338:	mv	a1,s5
+    233a:	mv	a0,s4
+    233c:	fmv.x.w	s7,fa0
+    2340:	jal	1cd2 <independent_reference>
+    2344:	fmv.d	fs2,fa0
+    2348:	blez	s3,2484 <check+0x1bc>
+    234c:	sd	s2,144(sp)
+    234e:	slli	s2,s3,0x3
+    2352:	add	s2,s2,s3
+    2354:	fmv.d.x	fs0,zero
+    2358:	slli	s2,s2,0x1
+    235a:	sd	s0,160(sp)
+    235c:	sd	s1,152(sp)
+    235e:	mv	s0,s4
+    2360:	mv	s1,s5
+    2362:	add	s2,s2,s4
+    2364:	mv	a1,s1
+    2366:	mv	a0,s0
+    2368:	li	a2,1
+    236a:	jal	1cd2 <independent_reference>
+    236e:	fabs.d	fa0,fa0
+    2372:	addi	s0,s0,18
+    2374:	addi	s1,s1,34 # ffffffffff000022 <__BSS_END__+0xfffffffffefbb002>
+    2378:	fadd.d	fs0,fs0,fa0
+    237c:	bne	s2,s0,2364 <check+0x9c>
+    2380:	auipc	a5,0x1
+    2384:	fld	fa4,-1296(a5) # 2e70 <_IO_stdin_used+0x380>
+    2388:	auipc	a5,0x1
+    238c:	fld	fa5,-1312(a5) # 2e68 <_IO_stdin_used+0x378>
+    2390:	fmadd.d	fs0,fs0,fa4,fa5
+    2394:	ld	s0,160(sp)
+    2396:	ld	s1,152(sp)
+    2398:	ld	s2,144(sp)
+    239a:	andi	a5,s3,1
+    239e:	fmv.s	fa5,fs1
+    23a2:	beqz	a5,246c <check+0x1a4>
+    23a4:	fmv.w.x	fa4,s6
+    23a8:	auipc	a4,0x3
+    23ac:	addi	a4,a4,-912 # 5018 <case_number>
+    23b0:	fcvt.d.s	fa2,fs1
+    23b4:	fcvt.d.s	fa1,fa4
+    23b8:	lw	a3,0(a4)
+    23ba:	auipc	a5,0x0
+    23be:	flw	fa3,1870(a5) # 2b08 <_IO_stdin_used+0x18>
+    23c2:	frflags	a2
+    23c6:	fabs.s	fa4,fa4
+    23ca:	fle.s	a5,fa4,fa3
+    23ce:	fsflags	a2
+    23d2:	beqz	a5,248e <check+0x1c6>
+    23d4:	frflags	a2
+    23d8:	fmv.w.x	fa4,s7
+    23dc:	fabs.s	fa4,fa4
+    23e0:	fle.s	a5,fa4,fa3
+    23e4:	fsflags	a2
+    23e8:	beqz	a5,248e <check+0x1c6>
+    23ea:	fabs.s	fs1,fs1
+    23ee:	frflags	a2
+    23f2:	fle.s	a5,fs1,fa3
+    23f6:	fsflags	a2
+    23fa:	beqz	a5,248e <check+0x1c6>
+    23fc:	sext.w	a5,s7
+    2400:	sext.w	s6,s6
+    2402:	bne	a5,s6,248e <check+0x1c6>
+    2406:	fsub.d	fa4,fa1,fa2
+    240a:	fabs.d	fa4,fa4
+    240e:	flt.d	a5,fs0,fa4
+    2412:	bnez	a5,248e <check+0x1c6>
+    2414:	fsub.d	fa4,fa2,fs2
+    2418:	fabs.d	fa4,fa4
+    241c:	flt.d	a5,fs0,fa4
+    2420:	bnez	a5,248e <check+0x1c6>
+    2422:	fsub.d	fa4,fa1,fs2
+    2426:	fabs.d	fa4,fa4
+    242a:	flt.d	a5,fs0,fa4
+    242e:	bnez	a5,248e <check+0x1c6>
+    2430:	fcvt.d.s	fa5,fa5
+    2434:	fsub.d	fa5,fa5,fa2
+    2438:	fabs.d	fa5,fa5
+    243c:	flt.d	a5,fs0,fa5
+    2440:	bnez	a5,248e <check+0x1c6>
+    2442:	addiw	a3,a3,1
+    2444:	sw	a3,0(a4)
+    2446:	ld	a4,56(sp)
+    2448:	ld	a5,0(s8)
+    244c:	xor	a5,a5,a4
+    244e:	li	a4,0
+    2450:	bnez	a5,255a <check+0x292>
+    2454:	ld	ra,168(sp)
+    2456:	ld	s3,136(sp)
+    2458:	ld	s4,128(sp)
+    245a:	ld	s5,120(sp)
+    245c:	ld	s6,112(sp)
+    245e:	ld	s7,104(sp)
+    2460:	ld	s8,96(sp)
+    2462:	fld	fs0,88(sp)
+    2464:	fld	fs1,80(sp)
+    2466:	fld	fs2,72(sp)
+    2468:	addi	sp,sp,176
+    246a:	ret
+    246c:	mv	a3,s3
+    246e:	mv	a2,s5
+    2470:	mv	a1,s4
+    2472:	auipc	a0,0x0
+    2476:	addi	a0,a0,-1976 # 1cba <original>
+    247a:	jal	fc8 <invoke>
+    247e:	fmv.s	fa5,fa0
+    2482:	j	23a4 <check+0xdc>
+    2484:	auipc	a5,0x1
+    2488:	fld	fs0,-1564(a5) # 2e68 <_IO_stdin_used+0x378>
+    248c:	j	239a <check+0xd2>
+    248e:	fmv.w.x	fa5,s7
+    2492:	sd	s1,152(sp)
+    2494:	auipc	s1,0x3
+    2498:	ld	s1,-1196(s1) # 4fe8 <stderr@GLIBC_2.27>
+    249c:	fcvt.d.s	fa5,fa5
+    24a0:	ld	a0,0(s1)
+    24a2:	fmv.x.d	a7,fa1
+    24a6:	fmv.x.d	a6,fa2
+    24aa:	fsd	fs0,16(sp)
+    24ac:	fsd	fs2,8(sp)
+    24ae:	fsd	fa5,0(sp)
+    24b0:	auipc	a5,0x3
+    24b4:	lw	a5,-1192(a5) # 5008 <state>
+    24b8:	mv	a4,s3
+    24ba:	auipc	a2,0x0
+    24be:	addi	a2,a2,1798 # 2bc0 <_IO_stdin_used+0xd0>
+    24c2:	li	a1,2
+    24c4:	sd	s2,144(sp)
+    24c6:	sd	s0,160(sp)
+    24c8:	addi	s5,s5,34
+    24cc:	jal	ad0 <__fprintf_chk@plt>
+    24d0:	addi	s4,s4,18
+    24d2:	li	s6,0
+    24d4:	auipc	s8,0x0
+    24d8:	addi	s8,s8,1884 # 2c30 <_IO_stdin_used+0x140>
+    24dc:	auipc	s2,0x0
+    24e0:	addi	s2,s2,1916 # 2c58 <_IO_stdin_used+0x168>
+    24e4:	auipc	s7,0x0
+    24e8:	addi	s7,s7,1916 # 2c60 <_IO_stdin_used+0x170>
+    24ec:	blez	s3,2554 <check+0x28c>
+    24f0:	lhu	a5,-34(s5)
+    24f4:	lhu	a4,-18(s4)
+    24f8:	ld	a0,0(s1)
+    24fa:	mv	a3,s6
+    24fc:	mv	a2,s8
+    24fe:	li	a1,2
+    2500:	jal	ad0 <__fprintf_chk@plt>
+    2504:	addi	s0,s4,-16
+    2508:	lbu	a3,0(s0)
+    250c:	ld	a0,0(s1)
+    250e:	mv	a2,s2
+    2510:	li	a1,2
+    2512:	addi	s0,s0,1
+    2514:	jal	ad0 <__fprintf_chk@plt>
+    2518:	bne	s4,s0,2508 <check+0x240>
+    251c:	ld	a3,0(s1)
+    251e:	li	a2,13
+    2520:	li	a1,1
+    2522:	mv	a0,s7
+    2524:	jal	ab0 <fwrite@plt>
+    2528:	addi	s0,s5,-32
+    252c:	lbu	a3,0(s0)
+    2530:	ld	a0,0(s1)
+    2532:	mv	a2,s2
+    2534:	li	a1,2
+    2536:	addi	s0,s0,1
+    2538:	jal	ad0 <__fprintf_chk@plt>
+    253c:	bne	s5,s0,252c <check+0x264>
+    2540:	ld	a1,0(s1)
+    2542:	li	a0,10
+    2544:	addiw	s6,s6,1
+    2546:	jal	af0 <fputc@plt>
+    254a:	addi	s5,s5,34
+    254e:	addi	s4,s4,18
+    2550:	bne	s3,s6,24f0 <check+0x228>
+    2554:	li	a0,1
+    2556:	jal	b90 <exit@plt>
+    255a:	sd	s0,160(sp)
+    255c:	sd	s1,152(sp)
+    255e:	sd	s2,144(sp)
+    2560:	jal	b10 <__stack_chk_fail@plt>
+
+0000000000002564 <benchmark>:
+    2564:	addi	sp,sp,-1296
+    2568:	sd	s0,1280(sp)
+    256c:	sd	s5,1240(sp)
+    2570:	lui	s0,0x3
+    2572:	lui	t0,0xffffd
+    2574:	lui	s5,0xffffe
+    2576:	sd	ra,1288(sp)
+    257a:	sd	s1,1272(sp)
+    257e:	sd	s3,1256(sp)
+    2582:	sd	s4,1248(sp)
+    2586:	sd	s8,1216(sp)
+    258a:	sd	s10,1200(sp)
+    258e:	sd	s11,1192(sp)
+    2592:	sd	s2,1264(sp)
+    2596:	sd	s6,1232(sp)
+    259a:	sd	s7,1224(sp)
+    259e:	sd	s9,1208(sp)
+    25a2:	fsd	fs0,1176(sp)
+    25a6:	addi	s5,s5,-560 # ffffffffffffddd0 <__BSS_END__+0xfffffffffffb8db0>
+    25aa:	add	sp,sp,t0
+    25ac:	addi	a5,s0,1152 # 3480 <__GNU_EH_FRAME_HDR+0x4c4>
+    25b0:	addi	a3,sp,16
+    25b2:	add	a5,a5,s5
+    25b4:	lui	s4,0xffffd
+    25b6:	add	s5,a5,a3
+    25ba:	addi	s4,s4,-1096 # ffffffffffffcbb8 <__BSS_END__+0xfffffffffffb7b98>
+    25be:	addi	a5,s0,1152
+    25c2:	add	a5,a5,s4
+    25c4:	add	s4,a5,a3
+    25c8:	li	a4,129
+    25cc:	lui	a5,0xffffd
+    25ce:	addi	a3,s0,1152
+    25d2:	add	a3,a3,a5
+    25d4:	addi	t1,sp,16
+    25d8:	li	a7,1
+    25da:	li	a6,1
+    25dc:	slli	a4,a4,0x20
+    25de:	addi	a5,sp,16
+    25e0:	addi	s1,s0,1144
+    25e4:	add	a5,a5,a3
+    25e6:	auipc	t3,0x3
+    25ea:	ld	t3,-1550(t3) # 4fd8 <__stack_chk_guard@GLIBC_2.27>
+    25ee:	addi	a4,a4,128
+    25f2:	slli	a7,a7,0x21
+    25f4:	slli	a6,a6,0x25
+    25f6:	add	s1,s1,t1
+    25f8:	sd	a4,-1112(a5) # ffffffffffffcba8 <__BSS_END__+0xfffffffffffb7b88>
+    25fc:	addi	a7,a7,1
+    25fe:	li	a4,256
+    2602:	addi	a6,a6,8
+    2604:	li	a3,-1
+    2606:	li	a2,257
+    260a:	ld	t1,0(t3)
+    260e:	sd	t1,0(s1)
+    2612:	li	t1,0
+    2614:	mv	s3,a0
+    2616:	mv	s8,a1
+    2618:	mv	a0,s4
+    261a:	mv	a1,s5
+    261c:	sw	a4,-1104(a5)
+    2620:	sd	a7,-1128(a5)
+    2624:	sd	a6,-1120(a5)
+    2628:	jal	1e26 <fill>
+    262c:	auipc	a0,0x0
+    2630:	addi	a0,a0,1636 # 2c90 <_IO_stdin_used+0x1a0>
+    2634:	jal	b70 <puts@plt>
+    2638:	lui	s11,0xffffd
+    263a:	addi	s11,s11,-1128 # ffffffffffffcb98 <__BSS_END__+0xfffffffffffb7b78>
+    263e:	addi	a5,s0,1152
+    2642:	add	a5,a5,s11
+    2644:	addi	a4,sp,16
+    2646:	add	s11,a5,a4
+    264a:	addi	a5,s11,28
+    264e:	sd	a5,24(sp)
+    2650:	auipc	s10,0x0
+    2654:	addi	s10,s10,1584 # 2c80 <_IO_stdin_used+0x190>
+    2658:	lw	s2,0(s11)
+    265c:	mv	a1,s5
+    265e:	mv	a0,s4
+    2660:	mv	a2,s2
+    2662:	jal	22c8 <check>
+    2666:	li	a4,100
+    266a:	mv	a3,s2
+    266c:	mv	a2,s5
+    266e:	mv	a1,s4
+    2670:	auipc	a0,0xfffff
+    2674:	addi	a0,a0,790 # 1986 <baseline>
+    2678:	jal	20cc <timed>
+    267c:	li	a4,100
+    2680:	mv	a3,s2
+    2682:	mv	a2,s5
+    2684:	mv	a1,s4
+    2686:	auipc	a0,0xfffff
+    268a:	addi	a0,a0,-414 # 14e8 <candidate>
+    268e:	jal	20cc <timed>
+    2692:	blez	s8,2716 <benchmark+0x1b2>
+    2696:	fcvt.d.w	fs0,s3
+    269a:	li	s1,0
+    269c:	auipc	s9,0x0
+    26a0:	addi	s9,s9,1492 # 2c70 <_IO_stdin_used+0x180>
+    26a4:	li	s0,0
+    26a6:	addw	a5,s1,s0
+    26aa:	andi	a5,a5,1
+    26ac:	auipc	s7,0xfffff
+    26b0:	addi	s7,s7,730 # 1986 <baseline>
+    26b4:	auipc	s6,0xfffff
+    26b8:	addi	s6,s6,-460 # 14e8 <candidate>
+    26bc:	beqz	a5,26fc <benchmark+0x198>
+    26be:	mv	a4,s3
+    26c0:	mv	a3,s2
+    26c2:	mv	a2,s5
+    26c4:	mv	a1,s4
+    26c6:	mv	a0,s6
+    26c8:	jal	20cc <timed>
+    26cc:	mv	a7,a0
+    26ce:	mv	a4,s9
+    26d0:	fcvt.d.lu	fa5,a7
+    26d4:	mv	a6,s3
+    26d6:	mv	a5,s2
+    26d8:	fdiv.d	fa5,fa5,fs0
+    26dc:	mv	a3,s0
+    26de:	mv	a2,s1
+    26e0:	auipc	a1,0x0
+    26e4:	addi	a1,a1,1520 # 2cd0 <_IO_stdin_used+0x1e0>
+    26e8:	li	a0,2
+    26ea:	fsd	fa5,0(sp)
+    26ec:	jal	ae0 <__printf_chk@plt>
+    26f0:	bnez	s0,2710 <benchmark+0x1ac>
+    26f2:	li	s0,1
+    26f4:	addw	a5,s1,s0
+    26f8:	andi	a5,a5,1
+    26fa:	bnez	a5,26be <benchmark+0x15a>
+    26fc:	mv	a4,s3
+    26fe:	mv	a3,s2
+    2700:	mv	a2,s5
+    2702:	mv	a1,s4
+    2704:	mv	a0,s7
+    2706:	jal	20cc <timed>
+    270a:	mv	a7,a0
+    270c:	mv	a4,s10
+    270e:	j	26d0 <benchmark+0x16c>
+    2710:	addiw	s1,s1,1
+    2712:	bne	s8,s1,26a4 <benchmark+0x140>
+    2716:	ld	a5,24(sp)
+    2718:	addi	s11,s11,4
+    271a:	bne	s11,a5,2658 <benchmark+0xf4>
+    271e:	lui	a5,0x3
+    2720:	addi	a4,sp,16
+    2722:	addi	a5,a5,1144 # 3478 <__GNU_EH_FRAME_HDR+0x4bc>
+    2726:	add	a5,a5,a4
+    2728:	auipc	a3,0x3
+    272c:	ld	a3,-1872(a3) # 4fd8 <__stack_chk_guard@GLIBC_2.27>
+    2730:	ld	a4,0(a5)
+    2732:	ld	a5,0(a3)
+    2734:	xor	a5,a5,a4
+    2736:	li	a4,0
+    2738:	bnez	a5,277c <benchmark+0x218>
+    273a:	lui	t0,0x3
+    273c:	add	sp,sp,t0
+    273e:	ld	ra,1288(sp)
+    2742:	ld	s0,1280(sp)
+    2746:	ld	s1,1272(sp)
+    274a:	ld	s2,1264(sp)
+    274e:	ld	s3,1256(sp)
+    2752:	ld	s4,1248(sp)
+    2756:	ld	s5,1240(sp)
+    275a:	ld	s6,1232(sp)
+    275e:	ld	s7,1224(sp)
+    2762:	ld	s8,1216(sp)
+    2766:	ld	s9,1208(sp)
+    276a:	ld	s10,1200(sp)
+    276e:	ld	s11,1192(sp)
+    2772:	fld	fs0,1176(sp)
+    2776:	addi	sp,sp,1296
+    277a:	ret
+    277c:	jal	b10 <__stack_chk_fail@plt>
+
+0000000000002780 <tests>:
+    2780:	addi	sp,sp,-1360
+    2784:	auipc	a5,0x0
+    2788:	addi	a5,a5,1780 # 2e78 <__PRETTY_FUNCTION__.2>
+    278c:	sd	ra,1352(sp)
+    2790:	sd	s0,1344(sp)
+    2794:	lui	ra,0x3
+    2796:	lui	t0,0xffffd
+    2798:	lui	s0,0xffffd
+    279a:	sd	s1,1336(sp)
+    279e:	sd	s3,1320(sp)
+    27a2:	sd	s4,1312(sp)
+    27a6:	sd	s5,1304(sp)
+    27aa:	sd	s6,1296(sp)
+    27ae:	sd	s8,1280(sp)
+    27b2:	sd	s9,1272(sp)
+    27b6:	sd	s10,1264(sp)
+    27ba:	sd	s2,1328(sp)
+    27be:	sd	s7,1288(sp)
+    27c2:	sd	s11,1256(sp)
+    27c6:	fsd	fs0,1240(sp)
+    27ca:	fsd	fs1,1232(sp)
+    27ce:	ld	t2,248(a5)
+    27d2:	add	sp,sp,t0
+    27d4:	ld	t6,264(a5)
+    27d8:	ld	t0,256(a5)
+    27dc:	ld	t4,280(a5)
+    27e0:	ld	t3,288(a5)
+    27e4:	ld	t1,296(a5)
+    27e8:	ld	a7,304(a5)
+    27ec:	ld	a6,312(a5)
+    27f0:	lw	a4,320(a5)
+    27f4:	ld	t5,272(a5)
+    27f8:	addi	s0,s0,-1096 # ffffffffffffcbb8 <__BSS_END__+0xfffffffffffb7b98>
+    27fc:	addi	a5,ra,1232 # 34d0 <__GNU_EH_FRAME_HDR+0x514>
+    2800:	add	a5,a5,s0
+    2802:	lui	s1,0xffffe
+    2804:	add	s0,a5,sp
+    2808:	addi	s1,s1,-560 # ffffffffffffddd0 <__BSS_END__+0xfffffffffffb8db0>
+    280c:	addi	a5,ra,1232
+    2810:	add	a5,a5,s1
+    2812:	add	s1,a5,sp
+    2816:	addi	a3,ra,1232
+    281a:	lui	a5,0xffffd
+    281c:	add	a3,a3,a5
+    281e:	addi	ra,ra,1224
+    2822:	add	a5,a3,sp
+    2826:	add	ra,ra,sp
+    2828:	auipc	s3,0x2
+    282c:	ld	s3,1968(s3) # 4fd8 <__stack_chk_guard@GLIBC_2.27>
+    2830:	ld	s2,0(s3)
+    2834:	sd	s2,0(ra)
+    2838:	li	s2,0
+    283a:	sd	t2,-1176(a5) # ffffffffffffcb68 <__BSS_END__+0xfffffffffffb7b48>
+    283e:	sd	t0,-1168(a5)
+    2842:	sd	t6,-1160(a5)
+    2846:	li	a3,136
+    284a:	li	a2,0
+    284c:	mv	a1,s1
+    284e:	mv	a0,s0
+    2850:	lui	s3,0x4
+    2852:	sd	t5,-1152(a5)
+    2856:	mv	s5,s0
+    2858:	sd	t4,-1144(a5)
+    285c:	sd	t3,-1136(a5)
+    2860:	sd	t1,-1128(a5)
+    2864:	sd	a7,-1120(a5)
+    2868:	sd	a6,-1112(a5)
+    286c:	sw	a4,-1104(a5)
+    2870:	li	s4,0
+    2872:	jal	1e26 <fill>
+    2876:	li	s6,0
+    2878:	auipc	s10,0xfffff
+    287c:	addi	s10,s10,1090 # 1cba <original>
+    2880:	auipc	s9,0x0
+    2884:	addi	s9,s9,1136 # 2cf0 <_IO_stdin_used+0x200>
+    2888:	li	s8,6
+    288a:	addi	s3,s3,-1024 # 3c00 <__FRAME_END__+0x700>
+    288e:	mv	a3,s4
+    2890:	mv	a2,s1
+    2892:	mv	a1,s0
+    2894:	mv	a0,s10
+    2896:	jal	fc8 <invoke>
+    289a:	slliw	a5,s4,0x5
+    289e:	fcvt.s.w	fs1,a5
+    28a2:	mv	a2,s4
+    28a4:	mv	a1,s9
+    28a6:	fcvt.d.s	fa5,fs1
+    28aa:	li	a0,2
+    28ac:	fmv.s	fs0,fa0
+    28b0:	fmv.x.d	a3,fa5
+    28b4:	fcvt.d.s	fa5,fa0
+    28b8:	fmv.x.d	a4,fa5
+    28bc:	jal	ae0 <__printf_chk@plt>
+    28c0:	sraiw	a5,s4,0x1
+    28c4:	slliw	a5,a5,0x6
+    28c8:	fcvt.s.w	fa5,a5
+    28cc:	feq.s	a5,fs0,fs1
+    28d0:	feq.s	a4,fa5,fs0
+    28d4:	seqz	a5,a5
+    28d8:	addw	s6,a5,s6
+    28dc:	beqz	a4,2ad4 <tests+0x354>
+    28e0:	mv	a2,s4
+    28e2:	mv	a1,s1
+    28e4:	mv	a0,s0
+    28e6:	addiw	s4,s4,1
+    28e8:	jal	22c8 <check>
+    28ec:	addi	s7,s5,18
+    28f0:	beq	s4,s8,292c <tests+0x1ac>
+    28f4:	li	a3,136
+    28f8:	mv	a2,s4
+    28fa:	mv	a1,s1
+    28fc:	mv	a0,s0
+    28fe:	jal	1e26 <fill>
+    2902:	addi	a5,s1,2
+    2906:	mv	s2,s0
+    2908:	mv	a0,a5
+    290a:	sh	s3,-2(a5)
+    290e:	sh	s3,0(s2)
+    2912:	li	a2,32
+    2916:	li	a1,1
+    2918:	jal	bd0 <memset@plt>
+    291c:	mv	a4,s2
+    291e:	addi	a5,a0,34
+    2922:	addi	s2,s2,18
+    2924:	bne	a4,s5,2908 <tests+0x188>
+    2928:	mv	s5,s7
+    292a:	j	288e <tests+0x10e>
+    292c:	li	a5,3
+    292e:	bne	s6,a5,2ab8 <tests+0x338>
+    2932:	lui	a4,0x3
+    2934:	lui	s4,0xffffd
+    2936:	addi	a5,a4,1232 # 34d0 <__GNU_EH_FRAME_HDR+0x514>
+    293a:	add	a5,a5,s4
+    293c:	lui	s8,0xffffd
+    293e:	add	s4,a5,sp
+    2942:	addi	s8,s8,-1176 # ffffffffffffcb68 <__BSS_END__+0xfffffffffffb7b48>
+    2946:	addi	a5,a4,1232
+    294a:	add	a5,a5,s8
+    294c:	add	s8,a5,sp
+    2950:	addi	s11,s8,76
+    2954:	li	s3,256
+    2958:	addi	s10,s4,-1224 # ffffffffffffcb38 <__BSS_END__+0xfffffffffffb7b18>
+    295c:	addi	s9,s4,-1200
+    2960:	lw	s2,0(s8)
+    2964:	li	s5,0
+    2966:	mv	a3,s5
+    2968:	mv	a2,s2
+    296a:	mv	a1,s1
+    296c:	mv	a0,s0
+    296e:	jal	1e26 <fill>
+    2972:	mv	a2,s2
+    2974:	mv	a1,s1
+    2976:	mv	a0,s0
+    2978:	addiw	s5,s5,1
+    297a:	jal	22c8 <check>
+    297e:	bne	s5,s3,2966 <tests+0x1e6>
+    2982:	slli	s6,s2,0x3
+    2986:	slli	s5,s2,0x4
+    298a:	li	a3,-1
+    298c:	mv	a2,s2
+    298e:	mv	a1,s1
+    2990:	mv	a0,s0
+    2992:	add	s6,s6,s2
+    2994:	add	s5,s5,s2
+    2996:	jal	1e26 <fill>
+    299a:	slli	s6,s6,0x1
+    299c:	slli	s5,s5,0x1
+    299e:	li	s7,0
+    29a0:	mv	a3,s7
+    29a2:	mv	a2,s6
+    29a4:	mv	a1,s0
+    29a6:	mv	a0,s10
+    29a8:	jal	e44 <guard_input>
+    29ac:	mv	a3,s7
+    29ae:	mv	a2,s5
+    29b0:	mv	a1,s1
+    29b2:	mv	a0,s9
+    29b4:	jal	e44 <guard_input>
+    29b8:	ld	a1,-1184(s4)
+    29bc:	ld	a0,-1208(s4)
+    29c0:	mv	a2,s2
+    29c2:	jal	22c8 <check>
+    29c6:	ld	a1,-1216(s4)
+    29ca:	ld	a0,-1224(s4)
+    29ce:	jal	ac0 <munmap@plt>
+    29d2:	bnez	a0,2ade <tests+0x35e>
+    29d6:	ld	a1,-1192(s4)
+    29da:	ld	a0,-1200(s4)
+    29de:	jal	ac0 <munmap@plt>
+    29e2:	bnez	a0,2ade <tests+0x35e>
+    29e6:	bnez	s7,29ee <tests+0x26e>
+    29ea:	li	s7,1
+    29ec:	j	29a0 <tests+0x220>
+    29ee:	addi	s8,s8,4
+    29f0:	bne	s11,s8,2960 <tests+0x1e0>
+    29f4:	lui	s3,0x1
+    29f6:	addi	s3,s3,-1096 # bb8 <strcmp@plt+0x8>
+    29fa:	auipc	s5,0x2
+    29fe:	addi	s5,s5,1550 # 5008 <state>
+    2a02:	li	s4,258
+    2a06:	lw	a5,0(s5)
+    2a0a:	li	a3,-1
+    2a0c:	mv	a1,s1
+    2a0e:	slliw	a4,a5,0xd
+    2a12:	xor	a5,a5,a4
+    2a14:	srliw	a4,a5,0x11
+    2a18:	xor	a5,a5,a4
+    2a1a:	slliw	a4,a5,0x5
+    2a1e:	xor	a5,a5,a4
+    2a20:	sext.w	a5,a5
+    2a22:	remuw	s2,a5,s4
+    2a26:	mv	a0,s0
+    2a28:	sw	a5,0(s5)
+    2a2c:	addiw	s3,s3,-1
+    2a2e:	mv	a2,s2
+    2a30:	jal	1e26 <fill>
+    2a34:	mv	a2,s2
+    2a36:	mv	a1,s1
+    2a38:	mv	a0,s0
+    2a3a:	jal	22c8 <check>
+    2a3e:	bnez	s3,2a06 <tests+0x286>
+    2a42:	auipc	a2,0x2
+    2a46:	lw	a2,1494(a2) # 5018 <case_number>
+    2a4a:	auipc	a1,0x0
+    2a4e:	addi	a1,a1,782 # 2d58 <_IO_stdin_used+0x268>
+    2a52:	li	a0,2
+    2a54:	jal	ae0 <__printf_chk@plt>
+    2a58:	lui	a5,0x3
+    2a5a:	addi	a5,a5,1224 # 34c8 <__GNU_EH_FRAME_HDR+0x50c>
+    2a5e:	add	a5,a5,sp
+    2a60:	auipc	a3,0x2
+    2a64:	ld	a3,1400(a3) # 4fd8 <__stack_chk_guard@GLIBC_2.27>
+    2a68:	ld	a4,0(a5)
+    2a6a:	ld	a5,0(a3)
+    2a6c:	xor	a5,a5,a4
+    2a6e:	li	a4,0
+    2a70:	bnez	a5,2ada <tests+0x35a>
+    2a72:	lui	t0,0x3
+    2a74:	add	sp,sp,t0
+    2a76:	ld	ra,1352(sp)
+    2a7a:	ld	s0,1344(sp)
+    2a7e:	ld	s1,1336(sp)
+    2a82:	ld	s2,1328(sp)
+    2a86:	ld	s3,1320(sp)
+    2a8a:	ld	s4,1312(sp)
+    2a8e:	ld	s5,1304(sp)
+    2a92:	ld	s6,1296(sp)
+    2a96:	ld	s7,1288(sp)
+    2a9a:	ld	s8,1280(sp)
+    2a9e:	ld	s9,1272(sp)
+    2aa2:	ld	s10,1264(sp)
+    2aa6:	ld	s11,1256(sp)
+    2aaa:	fld	fs0,1240(sp)
+    2aae:	fld	fs1,1232(sp)
+    2ab2:	addi	sp,sp,1360
+    2ab6:	ret
+    2ab8:	auipc	a5,0x2
+    2abc:	ld	a5,1328(a5) # 4fe8 <stderr@GLIBC_2.27>
+    2ac0:	ld	a3,0(a5)
+    2ac2:	li	a2,40
+    2ac6:	li	a1,1
+    2ac8:	auipc	a0,0x0
+    2acc:	addi	a0,a0,600 # 2d20 <_IO_stdin_used+0x230>
+    2ad0:	jal	ab0 <fwrite@plt>
+    2ad4:	li	a0,1
+    2ad6:	jal	b90 <exit@plt>
+    2ada:	jal	b10 <__stack_chk_fail@plt>
+    2ade:	auipc	a0,0x0
+    2ae2:	addi	a0,a0,626 # 2d50 <_IO_stdin_used+0x260>
+    2ae6:	jal	b80 <perror@plt>
+    2aea:	li	a0,1
+    2aec:	jal	b90 <exit@plt>

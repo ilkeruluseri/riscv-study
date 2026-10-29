@@ -1,0 +1,17 @@
+{
+  "revision": "31385c9cebf9e5271a38e14c26e5df6dd93718b1",
+  "source_root": "/home/ilker-pc/llama.cpp",
+  "sha256": {
+    "ggml/src/ggml-cpu/arch/riscv/quants.c": "acf089ff8b39c1eeb7cb8f67df8ab49055a5b82a530b9c4871ea7ab732cf390f",
+    "ggml/src/ggml-cpu/quants.c": "a61f1011e49d05b5f99d352b158d5b8e36cf008294bb0db309f72bdd7f1d4e35",
+    "ggml/src/ggml-common.h": "0061131b615c5721fc88a78feeb22c1f8c450f1c2646a317d80796a653bf595c",
+    "ggml/src/ggml-quants.h": "28ae5fca1f3be636b36cd6c4fa2ca74fd42d229bfbd5352eaf66f3727bb8a6da",
+    "ggml/src/ggml-impl.h": "43564db0238aebb7ed68501e346c194866b5dac218d1d37b26baff9f458c00d3",
+    "ggml/include/ggml.h": "12ee71f99db7db9b353bc02b1fbb57c344ee17c01ac5fb7952b41a637a747ea9",
+    "ggml/include/gguf.h": "e56714aab702e5ce62ee587a409643c08f7e93e8fbb77f48ef7cc85075f96fa4",
+    "LICENSE": "94f29bbed6a22c35b992c5c6ebf0e7c92f13b836b90f36f461c9cf2f0f1d010d",
+    "ggml/src/ggml-cpu/ggml-cpu.c": "8a2b58628993b9af52c53978afcd8800ec458274455605b3ecc08432b6344d5e",
+    "ggml/src/ggml-cpu/simd-mappings.h": "d1ca849419a643d4304d82d3921d11b02722ccf69d607a86c2c579b864f700b2",
+    "tools/llama-bench/README.md": "9b379107db00bfc2a3473325503968681dfc1f664b5731a23060132902d67d9a"
+  }
+}

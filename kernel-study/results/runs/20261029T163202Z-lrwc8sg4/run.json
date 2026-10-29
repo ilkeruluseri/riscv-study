@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "kind": "smoke",
+  "profile": "none",
+  "native_rvv_timing_eligible": false,
+  "classification_basis": "user-selected kind plus host-architecture guard; VM/wrapper detection is not guaranteed",
+  "timing_scope": "whole subprocess including startup, teardown, and profiler overhead if enabled",
+  "command": [
+    "qemu-riscv64",
+    "-L",
+    "/usr/riscv64-linux-gnu",
+    "-cpu",
+    "max,vlen=128,elen=64,vext_spec=v1.0",
+    "kernel-study/results/study-O2",
+    "--bench",
+    "3",
+    "2"
+  ],
+  "cwd": "/home/ilker-pc/riscv",
+  "started_utc": "2026-10-29T16:32:02.817316+00:00",
+  "requested_repetitions": 1,
+  "timeout_seconds": 30,
+  "artifacts": [
+    {
+      "source": "/usr/bin/qemu-riscv64",
+      "copy": "artifacts/001-qemu-riscv64",
+      "sha256": "2fdbef0779371e2fa23d158fe65cc8c9585e619980c9a9799d13e54cd3a532a8"
+    },
+    {
+      "source": "/home/ilker-pc/riscv/kernel-study/results/study-O2",
+      "copy": "artifacts/002-study-O2",
+      "sha256": "7022147b36a34b37c89fd67ce6e076e937abd1ecb12ceba8cf30a8adf523a621"
+    },
+    {
+      "source": "/home/ilker-pc/riscv/kernel-study/results/build-O2.txt",
+      "copy": "artifacts/003-build-O2.txt",
+      "sha256": "c8901dfb0a9723ba4988ef2c2e1545b361803e0c2f62edf4c17dfd5844798ba9"
+    },
+    {
+      "source": "/home/ilker-pc/riscv/kernel-study/results/study-O2-assembly.json",
+      "copy": "artifacts/004-study-O2-assembly.json",
+      "sha256": "de810029c293267dc993a74509bd121d9deb0c83d99e2b40a985befc533b4cd8"
+    },
+    {
+      "source": "/home/ilker-pc/riscv/kernel-study/source-manifest.json",
+      "copy": "artifacts/005-source-manifest.json",
+      "sha256": "8241a90918d12c18d62e38276356f40bba272915d681069cd58fb0a4ab4243f0"
+    },
+    {
+      "source": "/home/ilker-pc/riscv/kernel-study/study.c",
+      "copy": "artifacts/006-study.c",
+      "sha256": "58fb6907ea887b87f505e671726dd26982c178839c6c5f7a21fc289dd09839c5"
+    },
+    {
+      "source": "/home/ilker-pc/riscv/kernel-study/kernels.inc",
+      "copy": "artifacts/007-kernels.inc",
+      "sha256": "0a01defa4192e22dda180febe75d0938feedfb39e7eb2480d25dd889782ff3a8"
+    },
+    {
+      "source": "/home/ilker-pc/riscv/kernel-study/conversion.inc",
+      "copy": "artifacts/008-conversion.inc",
+      "sha256": "59b4efbe251d68c2600ef7570fdd04511702aa08fc894348bf4c96920753dfe3"
+    },
+    {
+      "source": "/home/ilker-pc/riscv/kernel-study/01-common-tail.patch",
+      "copy": "artifacts/009-01-common-tail.patch",
+      "sha256": "540687e5db0c3d6698cc420932dc6be3716f87971f54a2dbfeb2479bf799d978"
+    },
+    {
+      "source": "/home/ilker-pc/riscv/kernel-study/02-scalar-extraction.patch",
+      "copy": "artifacts/010-02-scalar-extraction.patch",
+      "sha256": "a068ae8f6b691bc9d917b325f42365aa0852e6ea00d98b04aea5e4ac41772880"
+    }
+  ],
+  "samples": [
+    {
+      "repetition": 1,
+      "executed_argv": [
+        "qemu-riscv64",
+        "-L",
+        "/usr/riscv64-linux-gnu",
+        "-cpu",
+        "max,vlen=128,elen=64,vext_spec=v1.0",
+        "kernel-study/results/study-O2",
+        "--bench",
+        "3",
+        "2"
+      ],
+      "exit_code": 0,
+      "elapsed_ns": 64571777,
+      "error": null,
+      "stdout": "rep-001.stdout",
+      "stderr": "rep-001.stderr"
+    }
+  ],
+  "status": "complete",
+  "finished_utc": "2026-10-29T16:32:04.298419+00:00"
+}
